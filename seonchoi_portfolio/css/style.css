@@ -170,35 +170,65 @@ header .contents_wrapper {
 
 #nav_top {
     float: right;
-    display: inline-block;
     padding: 1.475em 0;
 }
 
-header nav a {
+.menu a {
+    transition: max-height 0.5s ease-in-out;
     font-size: .8em;
     font-weight: 700;
     letter-spacing: 2px;
     margin-left: 1.5em;
 }
 
-header nav a:hover {
+.menu a:hover {
     border-bottom: 1px solid rgb(255, 15, 0);
 }
 
-header nav a:active {
+.menu a:active {
     border-bottom: 1px solid #c1c1c1;
 }
 
-#toggle {
+#toggle, .toggle-check {
     display: none;
 }
 
-label {
-    display: none;
+#toggle {
     cursor: pointer;
-    padding: .5em 0;  
-    
+    border-bottom: 2px solid currentColor;
+    width: 22px;
+    transition: border-bottom 1s ease-in-out;
+    -webkit-transition: border-bottom 1s ease-in-out;
 }
+
+#toggle:before, #toggle:after{
+    content: "";
+    display: block;
+    border-bottom: 2px solid currentColor;
+    margin-bottom: 6px;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.toggle-check:checked ~ #toggle {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.8s ease-in-out;
+    -webkit-transition: border-bottom 0.8s ease-in-out;
+}
+
+.toggle-check:checked ~ #toggle:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-2px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-2px);
+}
+
+.toggle-check:checked ~ #toggle:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+}
+
+
 
 /*--MAIN-------------------------------------------------------------------------------------------------------*/
 
@@ -273,7 +303,7 @@ main {
     right: 0;
 }
 
-.gallery_left_nav:hover, .gallery_right_nav:hover{
+.gallery_left_nav:active, .gallery_right_nav:active {
     color: rgb(255, 15, 0);
     background-color: rgba(30, 30, 30, 0.8);
 }
@@ -330,8 +360,8 @@ main {
 }
 
 .box ul {
-    text-indent: -.85em;
-    padding-left: .5em;
+    text-indent: -1em;
+    padding-left: .65em;
 }
 
 .box span, .projects_description span {
@@ -475,7 +505,7 @@ input:hover, textarea:hover{
 footer .button {
     color: #303030;
     background: #c1c1c1;
-    margin-top: .25em;
+    margin-top: .5em;
 }
 
 footer .button:hover {
@@ -580,6 +610,10 @@ footer p {
         background-attachment: unset;
     }
     
+    .gallery_left_nav, .gallery_right_nav{
+        top: 30vh;
+    }
+
     h1 {
         font-size: 3em;
     }
@@ -646,67 +680,51 @@ footer p {
         width: 11em;
         padding: .1em 0;
     }
-   
-    #nav_top {
-        float: right;
+
+        #nav_top {
         position: absolute;
-        text-align: right;
-        right: 0;
-        padding: .425em 1.5em 0;
         width: 100%;
-    }
-
-    nav {
-        display: none;
-    }
-
-    label {
-        display: block;
-        font-size: 1.5em;
-        padding: .3em 0;
-    }
-
-    header nav a {
-        color: #f2f2f2;
-        display: block;
-        margin: 0;
-        padding: 1em;
-        letter-spacing: 1px;
-        border-bottom: none;
-    }
-
-    header nav a:visited {
-        color: #f2f2f2;
-    }
-
-    header nav a:hover {
-        border-bottom: none;
-        background: rgb(255, 15, 0);
-        padding: 1em;
-    }
-
-    header nav a:active {
-        border-bottom: none;
-        background: #919191;
-        padding: 1em;
+        right: 0;
+        padding: 1.15em 0;        
     }
 
     #toggle {
-        position: relative;
-    }
-  
-    #toggle:checked + nav {
         display: block;
-        text-align: center;
-        background: rgba(30, 30, 30, 0.8);
-        padding: 0;
+        float: right;
+        margin-right: 5%;
+    }
+
+    .toggle-check:checked ~ .menu  {
+        display: block;
+    }
+
+    .toggle-check:checked ~ #toggle {
+        padding-top: .45em;  
+    }
+
+    .menu {
+        display: none;
         position: absolute;
         top: 3.5em;
-        right: 0;
-        z-index: 3;
+        z-index: 5;
         width: 100%;
+    }
+
+    .menu a {
+        display: block;
+        background: rgba(30, 30, 30, 0.8);
+        padding: 1em;
+        margin-left: 0;
+    }
+
+    .menu a:hover {
         border-bottom: none;
-        opacity: .95;
+        background: rgb(255, 15, 0);
+    }
+
+    .menu a:active {
+        border-bottom: none;
+        background: #919191;
     }
 
     main {
@@ -759,27 +777,4 @@ footer p {
 
 /*--TEST-------------------------------------------------------------------------------------------------------*/
 
-/*.nav_top_min_wrapper {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 2em;
-    height: .25em;
-    background-color: white;
-    margin: .4em 0;
-    transition: 0.4s;
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);*/
 
