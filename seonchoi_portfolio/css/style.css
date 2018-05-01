@@ -46,10 +46,12 @@ p {
     margin-bottom: 1em;
 }
 
+
 h1 {
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
+    text-transform: uppercase;
     font-size: 3.25em;
-    font-weight: 700;  
+    font-weight: 900;  
     line-height: 1em;  
 }
 
@@ -250,19 +252,19 @@ main {
 }
 
 .slide_1 {
-    background: url(../images/projects/HiteJinro_2017-Hite-Beer-Dodgers-Edition-Promotion.jpg) no-repeat center center scroll;
+    background: url(../images/projects/HiteJinro_2017-Hite-Beer-Dodgers-Edition-Promotion_Main.jpg) no-repeat center center scroll;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .slide_2 {
-    background: url(../images/projects/GolfBuddy_2015-2016-Seasonal-Promotion_Flyer_1.jpg) no-repeat center center scroll;
+    background: url(../images/projects/GolfBuddy_2015-2016-Seasonal-Promotion_Main.jpg) no-repeat center center scroll;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .slide_3 {
-    background: url(../images/projects/Lotte_Trevi_Print_1.jpg) no-repeat center center scroll;
+    background: url(../images/projects/Lotte_Trevi_Print_Main.jpg) no-repeat center center scroll;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -342,7 +344,7 @@ main {
 #about .button {
     background: rgb(255, 15, 0);
     color: #f2f2f2;
-    margin: .75em auto 2.5em;
+    margin: .75em auto 2.25em;
 }
 
 #about .button:hover {
@@ -384,21 +386,20 @@ main {
     width: 95%;
 }
 
-.projects_grid {
+.projects_col {
     position: relative;
     float: left;
     width: 49.25%;
     margin: .75% 0;
 }
 
-.margin_right {
+.left_col_margin {
     margin-right: .75%;
 }
 
-.margin_left {
+.right_col_margin {
     margin-left: .75%;
 }
-
 
 .projects_overlay {
     position: absolute;
@@ -538,7 +539,7 @@ footer p {
 
 .projects_description {
     max-width: 42em;
-    margin: 0 auto 2em;
+    margin: 2em auto;
 }
 
 #projects_page ul li {
@@ -559,13 +560,13 @@ footer p {
     margin: 0 auto 1%;
 }
 
-#projects_page:after {
+#projects_page .pagination_wrapper:after {
     display: block;
     content: "";
     border-bottom: 1px solid #919191;
     width: 95%;
     max-width: 75em;
-    margin: 4em auto -3.5em; 
+    margin: 8em auto -7.5em; 
 }
 
 .project_nav_button {
@@ -576,6 +577,31 @@ footer p {
 
 .project_nav_button:hover {
     background-color: #d9d9d9;
+}
+
+.animation_bg {
+    width: 100%;
+    margin: 0 auto 1%;
+}
+
+.animation_wrapper {
+    width: 80%;
+    max-width: 50em;
+    padding: 3.5em 0 2.75em 0;
+    margin: 0 auto;
+}
+
+.animation_image {
+    display: inline-block;
+    position: relative;
+    padding: .75em 1em;
+    box-sizing: content-box;
+}
+
+
+#zespri_bg {
+    background: url(../images/projects/Zespri_2015-2016_Product-Campaign_BG.jpg) no-repeat center center scroll;
+    background-size: cover;
 }
 
 
@@ -632,10 +658,6 @@ footer p {
         height: auto;
         padding: 1.5em;
         margin: 1% 0;
-    }
-
-    #projects .contents_wrapper {
-        width: 70%;
     }
 
     .projects_grid {
@@ -739,6 +761,23 @@ footer p {
         width: 80%;
     }
 
+    #projects .contents_wrapper {
+        width: 100%;
+    }
+
+    .projects_col {
+        width: 100%;
+        margin: .75% 0;
+    }
+
+    #projects_page .contents_wrapper {
+        width: 100%;
+    }
+
+    #projects_page .pagination_wrapper:after {
+        width: 90%;
+    }
+
     #clients .contents_wrapper {
         width: 70%;
     }
@@ -760,9 +799,6 @@ footer p {
     #about .contents_wrapper {
         width: 80%;
     }
-    #projects .contents_wrapper {
-       width: 100%;
-    }
 
     .projects_description {
         width: 80%;
@@ -772,6 +808,9 @@ footer p {
         width: 90%;
     }
 
+    #contact .contents_wrapper {
+        width: 80%;
+    }
 
 }
 
