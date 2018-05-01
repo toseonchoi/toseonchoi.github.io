@@ -33,7 +33,7 @@ function showDivs(n) {
   dots[slideIndex-1].className += " pagination_dot_selected";
 }
 
-/*--JUMP SCROLL-------------------------------------------------------------------------------------------------------*/
+/*--SMOOTH SCROLL-------------------------------------------------------------------------------------------------------*/
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
