@@ -253,17 +253,14 @@ header .contents_wrapper {
 
 /*--RETURN TOP------------------------------------------------------------------------------------------------------*/
 
-
 .return_top{
     display: block;
     position: fixed;
-    cursor:pointer;
+    cursor: pointer;
     z-index: 5;
-    color: #f0f0f0!important;
-    background-color: rgba(28, 28, 28, 0.8)!important;
-    /*border: 1.5px solid #484848;*/
-    /*opacity: 0.7;*/
-    padding: .25em .5em;
+    background: url(../images/assets/icon_return_top_48.svg) no-repeat center center scroll;
+    width: 2em;
+    height: 1em;
     margin-right: calc(4% + .75em); 
     right: 0;
     bottom: -3.5em;
@@ -278,11 +275,11 @@ header .contents_wrapper {
 }
 
 .return_top:hover {
-    background: #808080; 
+    opacity: 0.8;
 }
 
 .return_top:active {
-    background: #b2b2b2;
+    opacity: 0.5;
 }
 
 
