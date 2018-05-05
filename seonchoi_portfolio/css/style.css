@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -10,8 +11,8 @@
 050218
 white= #ffffff;
 bg-grey= #f0f0f0;
-mid-grey= #b2b2b2;
-mid-dark grey (body)= #808080; 
+mid-grey (active) = #b2b2b2;
+mid-dark grey (body, hover)= #808080; 
 dark grey (head)= #484848; rgba(28, 28, 28, 0.8);
 
 */
@@ -20,7 +21,7 @@ dark grey (head)= #484848; rgba(28, 28, 28, 0.8);
 
 body {
     background: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Work Sans', 'Helvetica', 'Arial', sans-serif;
     color: #808080;
     font-size: 18px;
     font-weight: 300;
@@ -39,17 +40,13 @@ p {
     margin-bottom: 1em;
 }
 
-h1, h2, h3, h5 {
+h1, h2, h4 {
     color: #484848;
-}
-
-h2, h3, h4, h5 {
-    font-weight: 400;
 }
 
 h1 {
     font-size: 2.75em;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1em;  
 }
 
@@ -63,17 +60,22 @@ h1::after {
 
 h2 {
     font-size: 1.5em;
+    font-weight: 400;
     margin: 0 auto .75em ; 
 }
 
 h3 {
-    font-size: 1em;
-    margin: 0 auto 1.75em ; 
+    font-size: 1.25em;
+    font-weight: 400;
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 auto 1.75em ; 
 }
+
+
 
 a {
     text-decoration: none;
@@ -90,6 +92,7 @@ a:visited {
 
 li {
     list-style: none;
+    font-size: .95em;
     margin-bottom: .5em;
 }
 
@@ -98,7 +101,7 @@ li {
     cursor: pointer;
     width: max-content;
     padding: .3em 1em;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 2px;
 }
 
@@ -124,12 +127,10 @@ li {
 header {
     position: fixed;
     top: 0;
-    background: #484848;
-    color: #f0f0f0;
+    background: #fff;
     width: 100%;
     height: 4em;
-    color: #484848;
-    box-shadow: .125em .125em .25em rgba(0, 0, 0, .02);
+    /*box-shadow: .125em .125em .25em rgba(0, 0, 0, .02);*/
     transition: top 0.6s ease-in-out;
     z-index: 5;
 }
@@ -148,7 +149,7 @@ header .contents_wrapper {
 
 #logo {
     float: left;
-    width: 12em;
+    width: 10em;
     height: 4em;
     padding: 0;
     z-index: 10;
@@ -234,20 +235,54 @@ header .contents_wrapper {
 }
 
 .menu a {
-    color: #f0f0f0;
+    color: #484848;
     font-size: .95em;
-    font-weight: 400;
+    font-weight: 500;
     margin-left: 1.5em;
     transition: max-height 0.5s ease-in-out;
 }
 
 .menu a:hover {
-    border-bottom: 1.5px solid #b2b2b2;
+    border-bottom: 1.5px solid #808080; 
 }
 
 .menu a:active {
-    border-bottom: 1.5px solid #808080; 
+    border-bottom: 1.5px solid #b2b2b2;
+}
 
+
+/*--RETURN TOP------------------------------------------------------------------------------------------------------*/
+
+
+.return_top{
+    display: block;
+    position: fixed;
+    cursor:pointer;
+    z-index: 5;
+    color: #f0f0f0!important;
+    background-color: rgba(28, 28, 28, 0.8)!important;
+    /*border: 1.5px solid #484848;*/
+    /*opacity: 0.7;*/
+    padding: .25em .5em;
+    margin-right: calc(4% + .75em); 
+    right: 0;
+    bottom: -3.5em;
+    -webkit-transition: bottom 0.9s ease-in-out;
+    -moz-transition: bottom 0.9s ease-in-out;
+    -o-transition: bottom 0.9s ease-in-out;
+    transition: bottom 0.9s ease-in-out;
+}
+
+.return_top.show {
+    bottom: 2em;
+}
+
+.return_top:hover {
+    background: #808080; 
+}
+
+.return_top:active {
+    background: #b2b2b2;
 }
 
 
@@ -272,7 +307,7 @@ main {
 }
 
 .slide_1 {
-    background: url(../images/projects/HiteJinro_2017_Hite-Beer-Dodgers-Edition-Promotion_Main.jpg) no-repeat center center scroll;
+    background: url(../images/projects/Gallery_Slide_1_GolfBuddy_2015-2016_Product-Promotion_E-Blast.jpg) no-repeat center center scroll;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -310,15 +345,15 @@ main {
     position: absolute;
     width: 100%;
     left: 50%;
-    top: 38vh;
+    top: 40vh;
     transform: translate(-50%,0%);
 }
 
 .slide_left_arrow, .slide_right_arrow{
     cursor: pointer;
-    margin: .5em;
-    color: #f0f0f0;
-    background-color: rgba(28, 28, 28, 0.8);
+    margin: 0 1em;
+    color: rgba(28, 28, 28, 0.8);
+/*    border: 1px solid rgba(28, 28, 28, 0.8);*/
     padding: .3em .7em;
     border-radius: 50%;
 }
@@ -332,13 +367,13 @@ main {
 }
 
 .slide_left_arrow:active, .slide_right_arrow:active {
-    color: #b2b2b2;
+    color: #808080;
 }
 
 .slide_dot_wrapper {
     position: absolute;
     transform: translate(-50%, -50%);
-    bottom: 2vh;
+    bottom: 0;
     left: 50%;
 }
 
@@ -347,8 +382,8 @@ main {
     cursor: pointer;
     border: 1px solid rgba(28, 28, 28, 0.8);
     border-radius: 50%;
-    width: .85em;
-    height: .85em;
+    width: .5em;
+    height: .5em;
     margin: 0 .25em;
     transition: background 0.4s;
 }
@@ -383,6 +418,11 @@ main {
     border: 1.5px solid #484848;
     background: #484848;
     color: #f0f0f0;
+}
+
+#about .button:active {
+    border: 1.5px solid #808080; 
+    background: #808080; 
 }
 
 .list {
@@ -444,7 +484,7 @@ main {
 }
 
 .projects_overlay_text hr {
-    background-color: #b2b2b2;
+    background-color: #f0f0f0;
     border: none;
     height: 1px;
     margin: .5em auto;
@@ -526,7 +566,7 @@ footer p {
 
     #logo {
         position: absolute;
-        width: 10em;
+        width: 8em;
         height: 3.5em;
         margin-left: 4%;
     }
@@ -568,11 +608,13 @@ footer p {
     .menu a:hover {
         border-bottom: none;
         background: #808080; 
+        opacity: 0.8; 
     }
 
     .menu a:active {
         border-bottom: none;
         background: #b2b2b2;
+        opacity: 0.8; 
     }
 
     #checkbox:checked + nav {
@@ -584,3 +626,6 @@ footer p {
 }
 
 /*--TEST-------------------------------------------------------------------------------------------------------*/
+
+
+

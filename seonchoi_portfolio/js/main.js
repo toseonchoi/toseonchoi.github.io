@@ -118,4 +118,23 @@ function showDivs(n) {
 
 
 
+/*--GOTOP-------------------------------------------------------------------------------------------------------*/
+
+
+$(window).scroll(function(event){
+    var scroll = $(window).scrollTop();
+    if (scroll >= 50) {
+        $(".return_top").addClass("show");
+    } else {
+        $(".return_top").removeClass("show");
+    }
+});
+/*Animation anchor*/
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+});
+
+
 /*--TEST-------------------------------------------------------------------------------------------------------*/
