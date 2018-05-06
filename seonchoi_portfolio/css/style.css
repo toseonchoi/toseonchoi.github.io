@@ -42,6 +42,8 @@ p {
 
 h1, h2, h4 {
     color: #484848;
+    max-width: 92%;
+    margin: 0 auto; 
 }
 
 h1 {
@@ -162,14 +164,14 @@ header .contents_wrapper {
     padding: 1.25em 0;
 }
 
-#checkbox, .hamburger_mark {
+#checkbox, .hamburger_box {
     display: none;
 }
 
 .hamburger {
-    transition-property: opacity, filter;
+/*    transition-property: opacity, filter;
     transition-duration: 0.5s;
-    transition-timing-function: linear;
+    transition-timing-function: linear;*/
 }
 
 .hamburger:hover {
@@ -182,9 +184,9 @@ header .contents_wrapper {
     height: 4px;
     background-color: #484848;
     border-radius: 4px;
-    transition-property: transform;
+/*    transition-property: transform;
     transition-duration: 0.15s;
-    transition-timing-function: ease; 
+    transition-timing-function: ease; */
 }
 
 .hamburger_mark::before, .hamburger_mark::after {
@@ -192,32 +194,24 @@ header .contents_wrapper {
     display: block; 
 }
 
-/*.hamburger_mark::before {
-    top: -10px; 
-}
-
-.hamburger_mark::after {
-    bottom: -10px; 
-}
-*/
 .hamburger_animation .hamburger_mark {
-    transition-duration: 0.275s;
+    transition-duration: 0.25s;
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); 
 }
 
 .hamburger_animation .hamburger_mark::before {
     top: 8px;
-    transition: opacity 0.125s 0.275s ease; 
+    transition: opacity 0.125s 0.25s ease; 
 }
 
 .hamburger_animation .hamburger_mark::after {
     top: 16px;
-    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+    transition: transform 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
 }
 
 .hamburger_animation.is-active .hamburger_mark {
     transform: translate3d(0, 8px, 0) rotate(135deg);
-    transition-delay: 0.075s; 
+    transition-delay: 0.05s; 
 }
 
 .hamburger_animation.is-active .hamburger_mark::before {
@@ -227,7 +221,7 @@ header .contents_wrapper {
 
 .hamburger_animation.is-active .hamburger_mark::after {
     transform: translate3d(0, -16px, 0) rotate(-270deg);
-    transition-delay: 0.075s; 
+    transition-delay: 0.05s; 
 }
 
 .menu {
@@ -253,14 +247,13 @@ header .contents_wrapper {
 
 /*--RETURN TOP------------------------------------------------------------------------------------------------------*/
 
+
 .return_top{
     display: block;
     position: fixed;
     cursor: pointer;
     z-index: 5;
-    background: url(../images/assets/icon_return_top_48.svg) no-repeat center center scroll;
     width: 2em;
-    height: 1em;
     margin-right: calc(4% + .75em); 
     right: 0;
     bottom: -3.5em;
@@ -306,7 +299,7 @@ main {
 .slide_1 {
     background: url(../images/projects/Gallery_Slide_1_GolfBuddy_2015-2016_Product-Promotion_E-Blast.jpg) no-repeat center center scroll;
     background-size: cover;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 
 .slide_2 {
@@ -342,7 +335,7 @@ main {
     position: absolute;
     width: 100%;
     left: 50%;
-    top: 40vh;
+    bottom: 40vh;
     transform: translate(-50%,0%);
 }
 
@@ -427,13 +420,20 @@ main {
     width: 48%;
     border-top: 1.5px solid #484848;
     padding: 2em 1em;
-    margin: 0 1%;
     text-align: left;
 }
 
 .list ul {
     text-indent: -1em;
     padding-left: .8em;
+}
+
+.margin_right {
+    margin-right: 2%;
+}
+
+.margin_left {
+    margin-left: 2%;
 }
 
 
@@ -496,7 +496,7 @@ main {
     width: 92%;
     max-width: 80em;
     margin: 0 auto;
-    padding: 5em 1em;
+    padding: 5em 0;
     background: url(../images/clients/clients_background.jpg) no-repeat center center scroll;
     background-size: cover;
     background-attachment: fixed;
@@ -525,10 +525,10 @@ footer {
     padding: 3em 0 1em;  
 }
 
-footer .contents_wrapper {
+/*footer .contents_wrapper {
     width: 92%;
     max-width: 80em;
-}
+}*/
 
 footer img {
     display: inline;
@@ -546,8 +546,35 @@ footer p {
 /*--MEDIA-------------------------------------------------------------------------------------------------------*/
 
 
+@media only screen and (max-width: 1180px) {
 
-@media only screen and (max-width: 630px) {
+    .gallery_image {
+        height: calc(90vh - 4em); 
+    }
+
+        .slide_arrow_wrapper {
+        bottom: 35vh;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .gallery_image {
+        height: calc(85vh - 4em); 
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+
+    #about .contents_wrapper {
+        width: 85%;
+    } 
+}
+
+@media only screen and (max-width: 800px) {
+
 
     header {
         height: 3.5em;
@@ -570,11 +597,11 @@ footer p {
 
     #nav_top {
         width: 100%;
-        right: 0;
         padding: 1.15em 0;
     }
 
     .hamburger_box {
+        display: block;
         position: absolute; 
         cursor: pointer;
         width: 1.5em;
@@ -583,7 +610,7 @@ footer p {
         margin-right: 4%;
     }
 
-    .hamburger_mark {
+    #checkbox:checked + .menu {
         display: block;
     }
 
@@ -614,13 +641,107 @@ footer p {
         opacity: 0.8; 
     }
 
-    #checkbox:checked + nav {
-        display: block;
-        border-bottom: none;
+    .return_top {
+        bottom: 2em;
+        transition: none;
     }
 
+    main {
+        top: 3.5em;
+    }
+
+    .gallery_image {
+        height: calc(70vh - 3.5em); 
+    }
+
+    .slide_arrow_wrapper {
+        bottom: 30vh;
+    }
+
+    .slide_left_arrow, .slide_right_arrow{
+        margin: 0;
+    }
+
+    .list {
+        float: none;
+        width: 100%;
+        padding: 2em 2em;
+        margin: 0;
+    }
+
+    .projects_grid {
+        float: none;
+        width: 100%;
+    }
+
+    #clients .contents_wrapper img {
+        width: 25%;
+    }
+
+    #clients .contents_wrapper img:hover {
+        transform: none;
+    }
 
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    #gallery {
+        width: 100%;
+    }
+
+    .gallery_image {
+        height: calc(55vh - 3.5em); 
+    }
+
+    .slide_arrow_wrapper {
+        bottom: .75vh;
+    }
+
+    .slide_left_arrow, .slide_right_arrow{
+        margin: 0 1.75%;
+    }
+
+    .return_top {
+        width: 1.5em;
+        margin-right: 4%;
+    }
+
+    #about, #projects .contents_wrapper, #clients {
+        width: 100%;
+    }
+
+    #clients .contents_wrapper img {
+        width: 28%;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+
+    #about .contents_wrapper {
+        width: 92%;
+    }
+
+    .list {
+        padding: 2em 0;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+
+    #clients .contents_wrapper img {
+        width: 40%;
+    }
+
+    footer p {
+        font-size: .7em;
+        line-height: 1.25em;
+        margin: 3em 4em 1em;
+    }
+
+}
+
 
 /*--TEST-------------------------------------------------------------------------------------------------------*/
 
