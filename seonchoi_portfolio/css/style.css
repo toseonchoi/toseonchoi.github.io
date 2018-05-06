@@ -42,14 +42,13 @@ p {
 
 h1, h2, h4 {
     color: #484848;
-    max-width: 92%;
-    margin: 0 auto; 
+
 }
 
 h1 {
     font-size: 2.75em;
     font-weight: 300;
-    line-height: 1em;  
+    line-height: 1em;
 }
 
 h1::after {
@@ -74,10 +73,9 @@ h3 {
 h4 {
     font-size: 1em;
     font-weight: 500;
-    margin: 0 auto 1.75em ; 
+    margin: 0 auto 1.75em ;
+    max-width: 92%; 
 }
-
-
 
 a {
     text-decoration: none;
@@ -391,7 +389,7 @@ main {
     width: 92%;
     max-width: 80em;
     margin: 0 auto;
-    padding: 6em 1em; 
+    padding: 6em 0 4em; 
 }
 
 #about .contents_wrapper {
@@ -700,7 +698,7 @@ footer p {
     }
 
     .slide_left_arrow, .slide_right_arrow{
-        margin: 0 1.75%;
+        margin: 0 1%;
     }
 
     .return_top {
@@ -719,12 +717,16 @@ footer p {
 
 @media only screen and (max-width: 490px) {
 
+    .gallery_image {
+        height: calc(50vh - 3.5em); 
+    }
+
     #about .contents_wrapper {
         width: 92%;
     }
 
     .list {
-        padding: 2em 0;
+        padding: 2em .25em 2em .5em;
     }
 }
 
