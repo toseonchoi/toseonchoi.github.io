@@ -716,24 +716,9 @@ footer p {
 
 @media only screen and (max-width: 490px) {
 
-/*    .gallery_image {
-        height: calc(70vh - 3.5em); 
-    }*/
-
-
-    .projects_overlay:focus {
-        opacity: 1;
-        background: red;
-        transition: all 0.5s ease-in-out;
-    }
-
     .list {
         padding: 2em .25em 2em .5em;
     }
-
-}
-
-@media only screen and (max-width: 430px) {
 
     #clients .contents_wrapper img {
         width: 40%;
@@ -752,3 +737,41 @@ footer p {
 
 
 
+@media (pointer:coarse) {
+    /* Primary Input is a coarse pointer device such as touchscreen or XBox Kinect etc */
+}
+ 
+@media (pointer:fine) {
+    /* Primary Input is a fine pointer device such as a mouse or stylus */
+}
+ 
+@media (hover:none) {
+    /* Primary Input doesn't respond to hover at all, even partially (ie: there is no pointing device) */
+}
+ 
+@media (hover:on-demand) {
+    /* Primary Input responds to hover only via emulation, such as touch screen devices */
+}
+ 
+@media (hover:hover) {
+    /* Primary Input responds to hover fully, such as a mouse or a Nintendo Wii controller */
+}
+
+@media (hover:hover) {
+    nav a:hover{
+        background: yellow;
+    }
+
+    .projects_overlay:hover {
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+    }
+
+}
+
+
+@media (hover:none), (hover:on-demand) {
+    nav a:hover{ /* suppress hover effect on devices that don't support hover fully */
+        background: none;
+    }
+}
