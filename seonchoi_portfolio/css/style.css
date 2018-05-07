@@ -135,11 +135,8 @@ header {
     z-index: 5;
 }
 
-header:inactive {
-    display: none;
-}
-
 header .contents_wrapper {
+    position: relative;
     width: 92%;
 }
 
@@ -148,22 +145,29 @@ header .contents_wrapper {
 }
 
 #logo {
-    float: left;
+    position: absolute;
+    left: 0;
     width: 10em;
     height: 4em;
-    padding: 0;
     z-index: 10;
 }
 
 #nav_top {
-    position: relative;
-    float: right;
+    position: absolute;
+    right: 0;
     height: 4em;
     padding: 1.25em 0;
 }
 
-#checkbox, .hamburger_box {
+#checkbox {
     display: none;
+}
+
+.hamburger_box {
+    display: none;
+    cursor: pointer;
+    width: 1.5em;
+    height: 1.25em;
 }
 
 .hamburger:hover {
@@ -172,6 +176,7 @@ header .contents_wrapper {
 
 .hamburger_mark, .hamburger_mark::before, .hamburger_mark::after {
     position: absolute;
+    left: 0;
     width: 1.5em;
     height: 4px;
     background-color: #484848;
@@ -410,7 +415,7 @@ main {
 
 .list ul {
     text-indent: -1em;
-    padding-left: .8em;
+    padding-left: 1em;
 }
 
 .margin_right {
@@ -517,8 +522,8 @@ footer {
 
 footer img {
     display: inline;
-    width: 1.875em;
-    height: 1.875em;
+    width: 2em;
+    height: 2em;
     margin-top: -1em;
 }
 
@@ -561,7 +566,6 @@ footer p {
 
 @media only screen and (max-width: 800px) {
 
-
     header {
         height: 3.5em;
     }
@@ -575,7 +579,6 @@ footer p {
     }
 
     #logo {
-        position: absolute;
         width: 8em;
         height: 3.5em;
         margin-left: 4%;
@@ -583,15 +586,12 @@ footer p {
 
     #nav_top {
         width: 100%;
-        padding: 1.15em 0;
+        height: 3.5em;
     }
 
     .hamburger_box {
         display: block;
         position: absolute; 
-        cursor: pointer;
-        width: 1.5em;
-        height: 1.35em;
         right: 0;
         margin-right: 4%;
     }
@@ -673,6 +673,10 @@ footer p {
 
 @media only screen and (max-width: 600px) {
 
+    body {
+        font-size: 16px;
+    }
+
     h4 {
         max-width: 88%; 
     }
@@ -698,18 +702,21 @@ footer p {
     }
 
     .slide_left_arrow, .slide_right_arrow {
-        margin: 0 3%;
+        margin: 0 4%;
     }
 
     .slide_dot {
-        width: .65em;
-        height: .65em;
         margin: 0 .35em;
+    }
+
+    .fade {
+        animation-name: none;
+        animation-duration: 0;
     }
 
     .return_top {
         width: 1.5em;
-        margin-right: 4%;
+        margin-right: 6%;
     }
 
     #about, #projects .contents_wrapper, #clients {
