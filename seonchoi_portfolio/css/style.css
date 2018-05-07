@@ -637,10 +637,6 @@ footer p {
         height: calc(70vh - 3.5em); 
     }
 
-    .slide_left_arrow, .slide_right_arrow {
-        margin: 0;
-    }
-
     .list {
         float: none;
         width: 100%;
