@@ -693,9 +693,9 @@ footer p {
         width: 100%;
     }
 
-    .gallery_image {
+/*    .gallery_image {
         height: calc(55vh - 3.5em); 
-    }
+    }*/
 
     .slide_arrow_wrapper {
         bottom: .75vh;
@@ -735,9 +735,9 @@ footer p {
 
 @media only screen and (max-width: 490px) {
 
-    .gallery_image {
-        height: calc(50vh - 3.5em); 
-    }
+/*    .gallery_image {
+        height: calc(70vh - 3.5em); 
+    }*/
 
     .list {
         padding: 2em .25em 2em .5em;
