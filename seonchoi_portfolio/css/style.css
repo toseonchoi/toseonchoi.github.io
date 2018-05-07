@@ -326,9 +326,10 @@ main {
     position: absolute;
     width: 100%;
     left: 50%;
-    bottom: 40vh;
+    bottom: .75vh;
     transform: translate(-50%,0%);
 }
+
 
 .slide_left_arrow, .slide_right_arrow{
     cursor: pointer;
@@ -542,10 +543,6 @@ footer p {
         height: calc(90vh - 4em); 
     }
 
-        .slide_arrow_wrapper {
-        bottom: 35vh;
-    }
-
 }
 
 @media only screen and (max-width: 1024px) {
@@ -640,10 +637,6 @@ footer p {
         height: calc(70vh - 3.5em); 
     }
 
-    .slide_arrow_wrapper {
-        bottom: 30vh;
-    }
-
     .slide_left_arrow, .slide_right_arrow {
         margin: 0;
     }
@@ -696,10 +689,6 @@ footer p {
 /*    .gallery_image {
         height: calc(55vh - 3.5em); 
     }*/
-
-    .slide_arrow_wrapper {
-        bottom: .75vh;
-    }
 
     .slide_left_arrow, .slide_right_arrow {
         margin: 0 4%;
