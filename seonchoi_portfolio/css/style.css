@@ -170,10 +170,6 @@ header .contents_wrapper {
     height: 1.25em;
 }
 
-.hamburger:hover {
-    opacity: 0.8; 
-}
-
 .hamburger_mark, .hamburger_mark::before, .hamburger_mark::after {
     position: absolute;
     left: 0;
@@ -724,8 +720,11 @@ footer p {
         height: calc(70vh - 3.5em); 
     }*/
 
-    .hamburger:hover {
-        opacity: 1; 
+
+    .projects_overlay:focus {
+        opacity: 1;
+        background: red;
+        transition: all 0.5s ease-in-out;
     }
 
     .list {
