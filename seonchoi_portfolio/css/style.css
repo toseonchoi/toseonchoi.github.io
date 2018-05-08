@@ -738,8 +738,28 @@ footer p {
         margin: 3em 4.75em 1em;
     }
 
+    .projects_overlay {
+        opacity: 1;
+    }
+
+    .projects_overlay:hover {
+        opacity: 0;
+    }
+
 }
 
 
 /*--TEST-------------------------------------------------------------------------------------------------------*/
+
+element:hover, element:active {
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-user-select: none;
+-webkit-touch-callout: none /*only to disable context menu on long press*/
+}
+
+.projects_overlay:hover, .projects_overlay:active {
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-user-select: none;
+-webkit-touch-callout: none /*only to disable context menu on long press*/
+}
 
