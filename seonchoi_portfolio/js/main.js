@@ -135,4 +135,3 @@ $('a').click(function(){
 
 /*--TEST-------------------------------------------------------------------------------------------------------*/
 
-document.addEventListener("touchstart", function(){}, true);
