@@ -739,13 +739,8 @@ footer p {
     }
 
 
-    .projects_overlay {
-        opacity: 1;
-    }
-
-    .projects_overlay:hover {
-        opacity: 0;
-        transition: all 2s ease-in-out;
+    .projects_overlay:hover, .projects_overlay:active {
+        transition: all 0s ease-in-out;
     }
 
     element:hover, element:active {
