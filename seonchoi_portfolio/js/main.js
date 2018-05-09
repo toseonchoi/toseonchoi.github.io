@@ -136,22 +136,3 @@ $('a').click(function(){
 /*--TEST-------------------------------------------------------------------------------------------------------*/
 
 
-+document.addEventListener("touchstart", function(){}, true); 
-
-
-
-
-
-
-
-
-
-
-$(this).click( function (){
-  var newUrl=this.href;
-  slideOut();
-  setTimeout(function(){
-    location.href=newUrl;
-  },1000)
-  return false;
-});
