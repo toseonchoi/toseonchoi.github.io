@@ -136,4 +136,6 @@ $('a').click(function(){
 /*--TEST-------------------------------------------------------------------------------------------------------*/
 
 
++$('body').bind('touchstart', function() {});
+
 +document.addEventListener("touchstart", function(){}, true); 
