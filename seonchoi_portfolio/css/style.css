@@ -752,7 +752,21 @@ footer p {
         line-height: 1.25em;
         margin: 3em 4.75em 1em;
     }
-
+    
+    .projects_overlay:hover, .projects_overlay:active {
+        -webkit-transition: all 0s ease-out;
+        -moz-transition: all 0s ease-out;
+        -ms-transition: all 0s ease-out;
+        transition: all 0s ease-out;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -moz-touch-callout: none;
+        -ms-touch-callout: none;
+        touch-callout: none;
+    }
 
 }
 
