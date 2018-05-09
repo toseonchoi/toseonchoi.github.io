@@ -423,7 +423,7 @@ main {
 }
 
 
-/*--MAIN-PROJECTS------------------------------------------------------------------------------------------------------*/
+/*--PROJECTS------------------------------------------------------------------------------------------------------*/
 
 
 #projects .contents_wrapper {
@@ -434,11 +434,6 @@ main {
     position: relative;
     float: left;
     width: 50%;
-}
-
-.projects img{
-
-
 }
 
 .projects_overlay {
@@ -477,6 +472,25 @@ main {
     height: 1px;
     margin: .5em auto;
     width: 1.5em;
+}
+
+
+/*--PROJECTS-INNER------------------------------------------------------------------------------------------------------*/
+
+#projects_inner_page {
+    background: #f0f0f0;
+    width: 92%;
+    max-width: 80em;
+    margin: 0 auto;
+    padding: 6em 0 4em; 
+}
+
+#projects_inner_page .contents_wrapper {
+    max-width: 42em;
+}
+
+#projects_inner_page p {
+    margin: 1.5em auto;
 }
 
 
@@ -555,7 +569,7 @@ footer p {
 
 @media only screen and (max-width: 950px) {
 
-    #about .contents_wrapper {
+    #about .contents_wrapper, #projects_inner_page .contents_wrapper {
         width: 85%;
     } 
 
@@ -682,10 +696,6 @@ footer p {
         width: 100%;
     }
 
-/*    .gallery_image {
-        height: calc(55vh - 3.5em); 
-    }*/
-
     .slide_left_arrow, .slide_right_arrow {
         margin: 0 4%;
     }
@@ -704,11 +714,11 @@ footer p {
         margin-right: 6%;
     }
 
-    #about, #projects .contents_wrapper, #clients {
+    #about, #projects .contents_wrapper, #clients, #projects_inner_page{
         width: 100%;
     }
 
-    #about .contents_wrapper {
+    #about .contents_wrapper, #projects_inner_page .contents_wrapper {
         width: 88%;
     }
 
@@ -753,7 +763,6 @@ footer p {
         -ms-touch-callout: none;
         touch-callout: none;
     }
-
 }
 
 

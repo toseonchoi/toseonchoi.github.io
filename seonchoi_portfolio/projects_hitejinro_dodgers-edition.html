@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -13,47 +14,51 @@
 
 	<body>
 		<div id="home"></div>
-		<header>
-			<div class="contents_wrapper clearfix">
+		<header class="header_down">
+			<div class="contents_wrapper">
 				<a href="index.html">
 					<img id="logo" src="images/assets/seon-choi_portfolio_logo.svg" alt="Logo" title="Seon Choi's Portfolio">
 				</a>
   				<div id="nav_top">
-  					<input type="checkbox" class="toggle-check" id="toggle-check">
-  					<label for="toggle-check" id="toggle"></label>
-					<nav class="menu">
-					    <a href="index.html#home">Home</a>
-					    <a href="index.html#about">About</a>
-					    <a href="index.html#projects">Projects</a>
+	  				<label class="hamburger hamburger_animation" for="checkbox">
+	  					<span class="hamburger_box">
+	  						<span class="hamburger_mark">
+	  					
+	  				</label>
+	  				<input type="checkbox" id="checkbox">
+	  				<nav class="menu">
+					    <a href="#home">Home</a>
+					    <a href="#about">About</a>
+					    <a href="#projects">Projects</a>
 					    <a href="#contact">Contact</a>
 					</nav>
 				</div>
 			</div>
 		</header>
 
-		<main>
-			<section id="projects_page">
-				<h1>HiteJinro</h1>
-				<div class="contents_wrapper clearfix">
-					<div class="projects_description">
-						<p>HiteJinro is one of biggest distiller in South Korea and the world's leading producer of soju. The main products are #1 most selling spirit, Chamisul Soju & most popular beer in the Korea, Hite Beer.</p>
+		<a href="#home" class="return_top">
+			<img src="images/assets/icon_return_top_48.svg" alt="Temp" title="Temp">
+		</a>
 
-						<ul>
-							<li><span>&#9656;</span><strong> Project: </strong>Hite Beer Dodgers Edition Promotion</li>
-							<li><span>&#9656;</span><strong> Client: </strong>HiteJinro</li>
-							<li><span>&#9656;</span><strong> Website: </strong><a href="http://www.hitejinrousa.com" target="_blank">www.hitejinrousa.com</a></li>
-							<li><span>&#9656;</span><strong> Medium: </strong>Off-Premise</li>
-							<li><span>&#9656;</span><strong> Language: </strong>English / Korean</li>
-							<li><span>&#9656;</span><strong> Date: </strong>2017</li>
-						</ul>
-					</div>
+		<main>
+			<section id="projects_inner_page">
+				<h4>HiteJinro</h4>
+				<p class="contents_wrapper">HiteJinro is one of biggest distiller in South Korea and the world's leading producer of soju. The main products are #1 most selling spirit, Chamisul Soju & most popular beer in the Korea, Hite Beer.</p>
+				<h1>Go Blue! Go Hite!</h1>
+				<h4>Hite Beer Dodgers Edition Promotion</h4>
+					<ul>
+						<li>&#9656; Website: <a href="http://www.hitejinrousa.com" target="_blank">www.hitejinrousa.com</a></li>
+						<li>&#9656; Medium: Off-Premise</li>
+						<li>&#9656; Language: English / Korean</li>
+						<li>&#9656; Date: 2017</li>
+					</ul>
 
 					<img src="images/projects/HiteJinro_2017_Hite-Beer-Dodgers-Edition-Promotion_Main.jpg" alt="Temp" title="Temp">
 
-					<p class="projects_description">Hite Beer has the partnership with LA Dodgers. Every year, Hite launches Dodgers limited edition for the LA Dodgers’ fans. By doing sampling event at the Dodgers Stadium, Hite Beer supports the field’s excitement, grabs the brand loyalty to the existing customer, also increases the familiarity, and spreads fame as the foreign beer.</p>
-					<p class="projects_description">Under this specific condition, this project is specifically targeted LA regional. As a graphic designer and LA Dodgers fan, I produced the various form of marketing materials, such as standing banner, poster, coupon, elevator wrap, t-shirt and announced the event through the social media. These mainly provide the new limited edition release, the local event information, also the general branding to raise its awareness.</p>
+					<p class="contents_wrapper">Hite Beer has the partnership with LA Dodgers. Every year, Hite launches Dodgers limited edition for the LA Dodgers’ fans. By doing sampling event at the Dodgers Stadium, Hite Beer supports the field’s excitement, grabs the brand loyalty to the existing customer, also increases the familiarity, and spreads fame as the foreign beer.</p>
+					<p class="contents_wrapper">Under this specific condition, this project is specifically targeted LA regional. As a graphic designer and LA Dodgers fan, I produced the various form of marketing materials, such as standing banner, poster, coupon, elevator wrap, t-shirt and announced the event through the social media. These mainly provide the new limited edition release, the local event information, also the general branding to raise its awareness.</p>
 
-					<h2><span>/</span>Off-Premise</h2>
+					<h2>/Off-Premise</h2>
 
 					<img src="images/projects/HiteJinro_2017_Hite-Beer-Dodgers-Edition-Promotion_Off-Premise.jpg" alt="Temp" title="Temp">
 					<img src="images/projects/HiteJinro_2017_Hite-Beer-Dodgers-Edition-Promotion_Sampling-Event.jpg" alt="Temp" title="Temp">
@@ -67,25 +72,18 @@
 			</section>
 
 			<footer id="contact">
-				<div class="contents_wrapper clearfix">
-					<h1>Let&rsquo;s Talk</h1>
-					<form>
-						<input id="name" type="text" placeholder="Name" required>
-						<input id="email" type="text" placeholder="Email" required>
-						<input id="subject" type="text" placeholder="Subject" required>
-						<textarea id="message" type="text" placeholder="Message" required></textarea>
-						<a href="#" class="button" type="submit" value="send">Send</a>
-					</form>
-					<a href="#">
-						<img alt="Email Icon" src="images/assets/contact_icon_email_64x64.png">
-					</a>
-					<a href="#">
-						<img alt="Linkedin Icon" src="images/assets/contact_icon_linkedin_64x64.png">
-					</a>
-					<p>Copyright &copy; 2018, Seon Choi. All rights reserved.</p>
-				</div>
+				<h1>Let&rsquo;s talk</h1>
+				<h4>Contact me at toseonchoi@gmail.com</h4>
+				<a href="mailto:toseonchoi@gmail.com">
+					<img alt="Email Icon" src="images/assets/icon_email_b.png">
+				</a>
+				<a href="https://www.linkedin.com/in/toseonchoi" target="_blank">
+					<img alt="Linkedin Icon" src="images/assets/icon_linkedin_b.png">
+				</a>
+				<p>Copyright &copy; 2018, Seon Choi. All rights reserved.</p>	
 			</footer>
 		</main>
 		<script src="js/main.js"></script>
    	</body>
 </html>
+
