@@ -292,7 +292,7 @@ main {
 }
 
 .slide_2 {
-    background: url(../images/projects/GolfBuddy_2015-2016_Seasonal-Promotion_Main.jpg) no-repeat center center scroll;
+    background: url(../images/projects/Gallery_Slide_2_Korean-Ginseng-Corp_2015-2016_Seasonal-Promotion_Print_1.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
@@ -738,9 +738,28 @@ footer p {
         margin: 3em 4.75em 1em;
     }
 
+    .projects_overlay {
+        opacity: 1;
+    }
+
+    .projects_overlay:hover {
+        opacity: 0;
+
+    }
+
 }
 
 
 /*--TEST-------------------------------------------------------------------------------------------------------*/
 
 
+element:hover, element:active {
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-user-select: none;
+-webkit-touch-callout: none /*only to disable context menu on long press*/
+}
+
+.projects_overlay:hover, .projects_overlay:active {
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-user-select: none;
+-webkit-touch-callout: none /*only to disable context menu on long press*/+}
