@@ -138,4 +138,4 @@ $('a').click(function(){
 
 +$('body').bind('touchstart', function() {});
 
-+document.addEventListener("touchstart", function(){}, true); 
+// +document.addEventListener("touchstart", function(){}, true); 
