@@ -40,7 +40,7 @@ p {
     margin-bottom: 1em;
 }
 
-h1, h2, h4 {
+h1, h2, h3 {
     color: #484848;
 }
 
@@ -59,21 +59,22 @@ h1::after {
 }
 
 h2 {
-    font-size: 1.5em;
-    font-weight: 400;
-    margin: 0 auto .75em ; 
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 auto 2em;
 }
 
 h3 {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 auto 1em;
+}
+
+h4 {
     font-size: 1.25em;
     font-weight: 400;
 }
 
-h4 {
-    font-size: 1em;
-    font-weight: 500;
-    margin: 0 auto 1.75em;
-}
 
 a {
     text-decoration: none;
@@ -88,20 +89,77 @@ a:visited {
     color: inherit;
 }
 
-li {
-    list-style: none;
-    font-size: .95em;
-    margin-bottom: .75em;
+/*hr {
+    width: 100%;
+    background-color: #484848;
+    border: none;
+    height: 1.5px;
+    margin: 4em auto;
+}
+*/
+
+.contents_wrapper {
+    max-width: 80em;
+    margin: 0 auto;
 }
 
-.button {
-    display: inline-block;
-    cursor: pointer;
-    width: max-content;
-    padding: .3em 1em;
-    font-weight: 500;
-    letter-spacing: 2px;
+.col_50 {
+    float: left;
+    width: 48%;
 }
+
+li {
+    list-style: none;
+    font-size: .9em;
+    margin-bottom: .5em;
+    text-indent: -1em;
+    padding-left: 1em;
+}
+
+.border_top {
+    border-top: 1.5px solid #484848;
+    padding: 3em 0 0;
+    margin-top: 3em;
+    text-align: left;
+}
+
+.border_top p {
+    font-size: .9em;
+}
+
+.no_border_top {
+    border-top: none;
+    margin-top: 0;
+    text-align: left;
+}
+
+.margin_right {
+    margin-right: 2%;
+}
+
+.margin_left {
+    margin-left: 2%;
+}
+
+.left_arrow, .right_arrow{
+    cursor: pointer;
+    margin: 0 1em;
+    color: rgba(28, 28, 28, 0.8);
+    padding: .3em .7em;
+}
+
+.left_arrow {
+    float: left;
+}
+
+.right_arrow {
+    float: right;
+}
+
+.left_arrow:active, .right_arrow:active {
+    color: #808080;
+}
+
 
 .clearfix:after {
     visibility: hidden;
@@ -110,15 +168,6 @@ li {
     content: " ";
     font-size: 0;
     height: 0;
-}
-
-
-/*--WRAPPER-------------------------------------------------------------------------------------------------------*/
-
-
-.contents_wrapper {
-    max-width: 80em;
-    margin: 0 auto;
 }
 
 
@@ -287,12 +336,12 @@ main {
 }
 
 .slide_1 {
-    background: url(../images/projects/Gallery_Slide_1_GolfBuddy_2015-2016_Product-Promotion_E-Blast.jpg) no-repeat center center scroll;
+    background: url(../images/projects/Gallery_slide_1_GolfBuddy_2015-2016_Product-Promotion_E-Blast.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
 .slide_2 {
-    background: url(../images/projects/Gallery_Slide_2_Korean-Ginseng-Corp_2015-2016_Seasonal-Promotion_Print.jpg) no-repeat center center scroll;
+    background: url(../images/projects/Gallery_slide_2_Korean-Ginseng-Corp_2015-2016_Seasonal-Promotion_Print.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
@@ -318,7 +367,7 @@ main {
     to {opacity: 1}
 }
 
-.slide_arrow_wrapper {
+.gallery_arrow_wrapper {
     position: absolute;
     width: 100%;
     left: 50%;
@@ -326,34 +375,14 @@ main {
     transform: translate(-50%,0%);
 }
 
-.slide_left_arrow, .slide_right_arrow{
-    cursor: pointer;
-    margin: 0 1em;
-    color: rgba(28, 28, 28, 0.8);
-    padding: .3em .7em;
-    border-radius: 50%;
-}
-
-.slide_left_arrow {
-    float: left;
-}
-
-.slide_right_arrow {
-    float: right;
-}
-
-.slide_left_arrow:active, .slide_right_arrow:active {
-    color: #808080;
-}
-
-.slide_dot_wrapper {
+.gallery_dot_wrapper {
     position: absolute;
     transform: translate(-50%, -50%);
     bottom: 0;
     left: 50%;
 }
 
-.slide_dot {
+.gallery_dot {
     display: inline-block;
     cursor: pointer;
     border: 1px solid rgba(28, 28, 28, 0.8);
@@ -364,7 +393,7 @@ main {
     transition: background 0.4s;
 }
 
-.slide_dot_selected {
+.gallery_dot_selected {
     background-color: rgba(28, 28, 28, 0.8)!important
 }
 
@@ -377,7 +406,7 @@ main {
     width: 92%;
     max-width: 80em;
     margin: 0 auto;
-    padding: 6em 0 4em; 
+    padding: 6em 0; 
 }
 
 #about .contents_wrapper {
@@ -385,13 +414,17 @@ main {
 }
 
 #about .button {
+    display: inline-block;
+    cursor: pointer;
+    width: max-content;
+    font-weight: 500;
+    padding: .3em 1em;
+    margin: 2em auto 0;
     border: 1.5px solid #484848;
-    color: #484848;
-    margin: 1.75em auto 3.25em;
+    color: #484848; 
 }
 
 #about .button:hover {
-    border: 1.5px solid #484848;
     background: #484848;
     color: #f0f0f0;
 }
@@ -399,27 +432,6 @@ main {
 #about .button:active {
     border: 1.5px solid #808080; 
     background: #808080; 
-}
-
-.list {
-    float: left;
-    width: 48%;
-    border-top: 1.5px solid #484848;
-    padding: 2em 1em;
-    text-align: left;
-}
-
-.list ul {
-    text-indent: -1em;
-    padding-left: 1em;
-}
-
-.margin_right {
-    margin-right: 2%;
-}
-
-.margin_left {
-    margin-left: 2%;
 }
 
 
@@ -482,15 +494,36 @@ main {
     width: 92%;
     max-width: 80em;
     margin: 0 auto;
-    padding: 6em 0 4em; 
+    padding: 2em 0 0; 
 }
 
 #projects_inner_page .contents_wrapper {
     max-width: 42em;
+    margin: 4em auto;
 }
 
-#projects_inner_page p {
-    margin: 1.5em auto;
+.projects_arrow_wrapper {
+    width: 92%;
+    max-width: 80em;
+    margin: .5em auto;
+}
+
+.projects_arrow_wrapper .left_arrow, .projects_arrow_wrapper .right_arrow{
+    cursor: pointer;
+    margin: 0;
+    color: rgba(28, 28, 28, 0.8);
+    padding: .3em .7em;
+    border: 1.5px solid #484848;
+}
+
+.projects_arrow_wrapper .left_arrow:hover, .projects_arrow_wrapper .right_arrow:hover{
+    background: #484848;
+    color: #f0f0f0;
+}
+
+.projects_arrow_wrapper .left_arrow:active, .projects_arrow_wrapper .right_arrow:active{
+    border: 1.5px solid #808080; 
+    background: #808080; 
 }
 
 
@@ -529,11 +562,6 @@ main {
 footer {
     padding: 3em 0 1em;  
 }
-
-/*footer .contents_wrapper {
-    width: 92%;
-    max-width: 80em;
-}*/
 
 footer img {
     display: inline;
@@ -651,6 +679,10 @@ footer p {
         height: calc(70vh - 3.5em); 
     }
 
+    #about .button {
+    margin: 1.5em auto 2.75em;
+    }
+
     .list {
         float: none;
         width: 100%;
@@ -696,11 +728,11 @@ footer p {
         width: 100%;
     }
 
-    .slide_left_arrow, .slide_right_arrow {
+    .left_arrow, .right_arrow {
         margin: 0 4%;
     }
 
-    .slide_dot {
+    .gallery_dot {
         margin: 0 .35em;
     }
 
