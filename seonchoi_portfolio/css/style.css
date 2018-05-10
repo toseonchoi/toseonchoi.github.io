@@ -116,19 +116,19 @@ li {
     padding-left: 1em;
 }
 
-.border_top {
+.list {
     border-top: 1.5px solid #484848;
     padding: 3em 0 0;
     margin-top: 3em;
     text-align: left;
 }
 
-.border_top p {
+.list p {
     font-size: .9em;
 }
 
-.no_border_top {
-    border-top: none;
+.no_border {
+    border: none;
     margin-top: 0;
     text-align: left;
 }
@@ -598,7 +598,7 @@ footer p {
 @media only screen and (max-width: 950px) {
 
     #about .contents_wrapper, #projects_inner_page .contents_wrapper {
-        width: 85%;
+        width: 80%;
     } 
 
 }
@@ -679,15 +679,18 @@ footer p {
         height: calc(70vh - 3.5em); 
     }
 
-    #about .button {
-    margin: 1.5em auto 2.75em;
+    .list {
+        padding: 3em 2em 0;
     }
 
-    .list {
+    .col_50 {
         float: none;
         width: 100%;
-        padding: 2em 2em;
-        margin: 0;
+    }
+
+    .margin_left, .margin_right {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .projects_grid {
@@ -766,22 +769,8 @@ footer p {
         font-size: 2.25em;
     }
 
-    h2 {
-        font-size: 1.25em;
-    }
-
     .list {
-        padding: 2em .25em 2em .5em;
-    }
-
-    #clients .contents_wrapper img {
-        width: 40%;
-    }
-
-    footer p {
-        font-size: .7em;
-        line-height: 1.25em;
-        margin: 3em 4.75em 1em;
+        padding: 2em .25em 0 .5em;
     }
 
     .projects_overlay:hover, .projects_overlay:active {
@@ -795,6 +784,18 @@ footer p {
         -ms-touch-callout: none;
         touch-callout: none;
     }
+
+    #clients .contents_wrapper img {
+        width: 40%;
+    }
+
+    footer p {
+        font-size: .7em;
+        line-height: 1.25em;
+        margin: 3em 4.75em 1em;
+    }
+
+
 }
 
 
