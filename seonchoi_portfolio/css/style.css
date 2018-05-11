@@ -6,6 +6,7 @@
 
 /*--COLOR PALETTE-------------------------------------------------------------------------------------------------*/
 
+/*LoVeHAte*/
 
 /*
 050218
@@ -14,8 +15,13 @@ bg-grey= #f0f0f0;
 mid-grey (active) = #b2b2b2;
 mid-dark grey (body, hover)= #808080; 
 dark grey (head)= #484848; rgba(28, 28, 28, 0.8);
-
 */
+
+/*
+Space rule:
+Large Space 6em;
+Small Space 3em;
+Paragraphc Space 1em;
 
 /*--ASSET---------------------------------------------------------------------------------------------------------*/
 
@@ -37,6 +43,9 @@ img {
 p {
     display: block;
     font-weight: 300;
+}
+
+.p_after_space { 
     margin-bottom: 1em;
 }
 
@@ -61,7 +70,7 @@ h1::after {
 h2 {
     font-size: 1em;
     font-weight: 500;
-    margin: 0 auto 2em;
+    margin: 0 auto 1em;
 }
 
 h3 {
@@ -121,6 +130,9 @@ a:visited {
     width: 48%;
 }
 
+.no_bottom_space {
+    padding-bottom: 0;
+}
 
 /*--HEADER-------------------------------------------------------------------------------------------------------*/
 
@@ -239,11 +251,12 @@ header .section_wrapper {
 
 
 .return_top{
-    display: block;
     position: fixed;
+    display: block;
     cursor: pointer;
     z-index: 5;
     width: 2em;
+    padding: .5em 0;
     margin-right: calc(4% + .75em); 
     right: 0;
     bottom: -3.5em;
@@ -254,7 +267,7 @@ header .section_wrapper {
 }
 
 .return_top.show {
-    bottom: 2em;
+    bottom: 1em;
 }
 
 .return_top:hover {
@@ -374,8 +387,12 @@ main {
     width: max-content;
     font-weight: 500;
     padding: .3em 1em;
-    margin: 2em auto 0;
+    margin: 3em auto 0;
     border: 1.5px solid #484848;
+    color: #484848; 
+}
+
+.button:visited {
     color: #484848; 
 }
 
@@ -391,7 +408,7 @@ main {
 
 .list {
     border-top: 1.5px solid #484848;
-    margin-top: 3.25em;
+    margin-top: 3.125em;
     text-align: left;
     padding: 3em 0 0;
 }
@@ -479,28 +496,20 @@ main {
 
 
 #projects_inner .section_wrapper{
-    padding: 0;
+    padding: 3em 0;
 }
 
 #projects_inner .contents_wrapper {
-    padding: 4em 0;
-}
-
-#projects_inner .about_client {
-    padding: 5em 0 0;
-}
-
-#projects_inner .about_client p {
-    font-size: .9em;
+    padding: 3em 0;
 }
 
 #projects_inner .projects_title {
-    padding: 2em 0 1em;
+    padding: 3em 0 1em;
 }
 
 .projects_arrow_wrapper {
     background-color: #fff;
-    margin: 1em auto;
+    margin: 1em auto 0;
 }
 
 .projects_arrow_wrapper .page_arrow_left, .projects_arrow_wrapper .page_arrow_right {
@@ -548,7 +557,6 @@ main {
 
 /*--FOOTER-------------------------------------------------------------------------------------------------------*/
 
-
 #contact {
     background: #fff;
     padding: 3em 0 1em;  
@@ -558,7 +566,7 @@ main {
     display: inline;
     width: 2em;
     height: 2em;
-    margin-top: -1em;
+    margin-top: -.25em;
 }
 
 #contact p {
@@ -661,11 +669,6 @@ main {
         opacity: 0.8; 
     }
 
-    .return_top {
-        bottom: 2em;
-        transition: none;
-    }
-
     main {
         top: 3.5em;
     }
@@ -727,8 +730,14 @@ main {
     }
 
     .return_top {
+        bottom: 1em;  
         width: 1.5em;
         margin-right: 7.5%;
+        transition: none;
+    }
+
+    .return_top.show {
+        bottom: 1em;  
     }
 
     .page_arrow_left, .page_arrow_right {
@@ -758,6 +767,14 @@ main {
 
     h1 {
         font-size: 2.25em;
+    }
+
+    .return_top {
+        bottom: 1.5em;
+    }
+
+    .return_top.show {
+        bottom: 1.5em;  
     }
 
     .list {
