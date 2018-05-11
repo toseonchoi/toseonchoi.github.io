@@ -285,12 +285,12 @@ main {
 }
 
 .slide_1 {
-    background: url(../images/projects/Gallery_slide_1_GolfBuddy_2015-2016_Product-Promotion_E-Blast.jpg) no-repeat center center scroll;
+    background: url(../images/projects/Gallery_Slide_1_GolfBuddy_2015-2016_Product-Promotion_E-Blast.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
 .slide_2 {
-    background: url(../images/projects/Gallery_slide_2_Korean-Ginseng-Corp_2015-2016_Seasonal-Promotion_Print.jpg) no-repeat center center scroll;
+    background: url(../images/projects/Gallery_Slide_2_Korean-Ginseng-Corp_2015-2016_Seasonal-Promotion_Print.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
@@ -750,7 +750,7 @@ main {
     }
 
     .projects_overlay:hover, .projects_overlay:active {
-        transition: all 1s ease-out;
+        transition: all 0s ease-out;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
