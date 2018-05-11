@@ -391,9 +391,9 @@ main {
 
 .list {
     border-top: 1.5px solid #484848;
-    padding: 3em 0 0;
-    margin-top: 3em;
+    margin-top: 3.25em;
     text-align: left;
+    padding: 3em 0 0;
 }
 
 .list li {
@@ -477,25 +477,35 @@ main {
 
 /*--PROJECTS-INNER------------------------------------------------------------------------------------------------------*/
 
-#projects_inner {
-    padding: 2em 0; 
+
+#projects_inner .section_wrapper{
+    padding: 0;
 }
 
 #projects_inner .contents_wrapper {
-    margin: 4em auto;
+    padding: 4em 0;
 }
 
-#projects_inner .page_arrow_wrapper {
-    width: 92%;
-    max-width: 80em;
-    margin: .5em auto;
+#projects_inner .about_client {
+    padding: 5em 0 0;
+}
+
+#projects_inner .about_client p {
+    font-size: .9em;
+}
+
+#projects_inner .projects_title {
+    padding: 2em 0 1em;
+}
+
+.projects_arrow_wrapper {
+    background-color: #fff;
+    margin: 1em auto;
 }
 
 .projects_arrow_wrapper .page_arrow_left, .projects_arrow_wrapper .page_arrow_right {
     cursor: pointer;
     margin: 0;
-    color: rgba(28, 28, 28, 0.8);
-    padding: .3em .7em;
     border: 1.5px solid #484848;
 }
 
@@ -537,6 +547,7 @@ main {
 
 
 /*--FOOTER-------------------------------------------------------------------------------------------------------*/
+
 
 #contact {
     background: #fff;
@@ -715,6 +726,11 @@ main {
         margin-right: 7.5%;
     }
 
+    .return_top {
+        width: 1.5em;
+        margin-right: 7.5%;
+    }
+
     .page_arrow_left, .page_arrow_right {
         margin: 0 5.5%;
     }
@@ -728,9 +744,8 @@ main {
         animation-duration: 0;
     }
 
-    .return_top {
-        width: 1.5em;
-        margin-right: 7.5%;
+    .projects_arrow_wrapper {
+        width: 85%;
     }
 
     .clients_logo_wrapper img {
@@ -746,7 +761,7 @@ main {
     }
 
     .list {
-        padding: 2em .25em 0 .5em;
+        padding: 3em .25em 0 .5em;
     }
 
     .projects_overlay:hover, .projects_overlay:active {
@@ -766,9 +781,9 @@ main {
     }
 
     #contact p {
-        font-size: .7em;
+        font-size: .8em;
         line-height: 1.25em;
-        margin: 3em 4.75em 1em;
+        margin: 3em 3.5em 1em;
     }
 
 }
