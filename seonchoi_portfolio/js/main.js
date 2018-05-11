@@ -100,17 +100,17 @@ function currentDiv(n) {
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("gallery_image");
-  var dots = document.getElementsByClassName("gallery_dot");
+  var dots = document.getElementsByClassName("slide_dot");
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" gallery_dot_selected", "");
+     dots[i].className = dots[i].className.replace(" slide_dot_selected", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " gallery_dot_selected";
+  dots[slideIndex-1].className += " slide_dot_selected";
 }
 
 
