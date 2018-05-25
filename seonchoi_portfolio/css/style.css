@@ -120,14 +120,14 @@ a:visited {
 
 .section_wrapper {
     background: #f0f0f0;
-    width: 92%;
+    width: 85%;
     max-width: 80em;
     margin: 0 auto;
     padding: 6em 0; 
 }
 
 .contents_wrapper {
-    width: 92%;
+    width: 85%;
     max-width: 42em;
     margin: 0 auto;
 }
@@ -257,14 +257,14 @@ header .section_wrapper {
 /*--RETURN TOP------------------------------------------------------------------------------------------------------*/
 
 
-.return_top{
+.return_top {
     position: fixed;
     display: block;
     cursor: pointer;
     z-index: 5;
     width: 2em;
     padding: .5em 0;
-    margin-right: calc(4% + .75em); 
+    margin-right: calc(7.5% + .75em); 
     right: 0;
     bottom: -3.5em;
     -webkit-transition: bottom 0.9s ease-in-out;
@@ -274,7 +274,7 @@ header .section_wrapper {
 }
 
 .return_top.show {
-    bottom: 1em;
+    bottom: 2em;
 }
 
 .return_top:hover {
@@ -297,26 +297,33 @@ main {
 
 #gallery {
     position: relative;
+    height: 50%;
     padding: 0; 
 }
 
-.gallery_image {
-    height: calc(94vh - 4em); 
+.gallery_image { 
+    height: 50em;
+    /*height: calc(92vh - 4em); */
+}
+
+.gallery_video {
+    width: 100%;
+  
 }
 
 .slide_1 {
-    background: url(../images/projects/Gallery_Slide_1_GolfBuddy_2015-2016_Product-Promotion_E-Blast.jpg) no-repeat center center scroll;
-    background-size: cover;
+    background: url(../images/projects/gallery_slide_golfbuddy_2015-2016_product-promotion_e-blast.jpg) no-repeat /*center center*/ scroll;
+    background-size: 100%; 
 }
 
 .slide_2 {
-    background: url(../images/projects/Gallery_Slide_2_Korean-Ginseng-Corp_2015-2016_Seasonal-Promotion_Print.jpg) no-repeat center center scroll;
-    background-size: cover;
+    background: #fff;
+    background-size: 100%;
 }
 
 .slide_3 {
-    background: url(../images/projects/Lotte_2016_Trevi-Promotion_Main.jpg) no-repeat center center scroll;
-    background-size: cover;
+    background: url(../images/projects/gallery_slide_korean-ginseng-corp_2015-2016_seasonal-promotion_print.jpg) no-repeat /*center center*/ scroll;
+    background-size: 100%;
 }
 
 .fade {
@@ -340,7 +347,9 @@ main {
     position: absolute;
     width: 100%;
     left: 50%;
-    bottom: .75vh;
+    top: 0;
+    margin: 20em auto;
+    /*bottom: .75vh;*/
     transform: translate(-50%,0%);
 }
 
@@ -366,7 +375,7 @@ main {
 .slide_dot_wrapper {
     position: absolute;
     transform: translate(-50%, -50%);
-    bottom: 0;
+    bottom: -.25em;
     left: 50%;
 }
 
@@ -564,7 +573,7 @@ main {
 
 #contact {
     background: #fff;
-    padding: 3em 0 1em;  
+    padding: 3em 0 2em;  
 }
 
 #contact img {
@@ -585,17 +594,17 @@ main {
 
 @media only screen and (max-width: 1180px) {
 
-    .gallery_image {
+/*    .gallery_image {
         height: calc(90vh - 4em); 
-    }
+    }*/
 
 }
 
 @media only screen and (max-width: 1024px) {
 
-    .gallery_image {
+/*    .gallery_image {
         height: calc(85vh - 4em); 
-    }
+    }*/
 
 }
 
@@ -612,6 +621,10 @@ main {
 }
 
 @media only screen and (max-width: 800px) {
+
+    .section_wrapper {
+        width: 92%;
+    }
 
     header {
         height: 3.5em;
@@ -678,9 +691,13 @@ main {
         top: 3.5em;
     }
 
-    .gallery_image {
-        height: calc(70vh - 3.5em); 
+    .return_top {
+        margin-right: calc(4% + .75em);
     }
+
+/*    .gallery_image {
+        height: calc(70vh - 3.5em); 
+    }*/
 
     .list {
         padding: 3em 2em 0;
@@ -741,9 +758,9 @@ main {
         transition: none;
     }
 
-    .return_top.show {
-        bottom: 1em;  
-    }
+/*    .return_top.show {
+        bottom: 2em;  
+    }*/
 
     .page_arrow_left, .page_arrow_right {
         margin: 0 5.5%;
@@ -779,7 +796,7 @@ main {
     }
 
     .return_top.show {
-        bottom: 1.5em;  
+        bottom: 2.5em;  
     }
 
     .list {
