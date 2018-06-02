@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -13,16 +14,20 @@
 
 	<body>
 		<div id="home"></div>
-		<header>
-			<div class="contents_wrapper clearfix">
+		<header class="header_down">
+			<div class="section_wrapper clearfix">
 				<a href="index.html">
 					<img id="logo" src="images/assets/seon-choi_portfolio_logo.svg" alt="Logo" title="Seon Choi's Portfolio">
 				</a>
   				<div id="nav_top">
-  					<input type="checkbox" class="toggle-check" id="toggle-check">
-  					<label for="toggle-check" id="toggle"></label>
-					<nav class="menu">
-					    <a href="index.html#home">Home</a>
+	  				<label class="hamburger hamburger_animation" for="checkbox">
+	  					<span class="hamburger_box">
+	  						<span class="hamburger_mark"></span>
+	  					</span>
+	  				</label>
+	  				<input type="checkbox" id="checkbox">
+	  				<nav class="menu">
+					    <a href="index.html">Home</a>
 					    <a href="index.html#about">About</a>
 					    <a href="index.html#projects">Projects</a>
 					    <a href="#contact">Contact</a>
@@ -32,61 +37,86 @@
 		</header>
 
 		<main>
-			<section id="projects_page">
-				<h1>Zespri</h1>
-				<div class="contents_wrapper clearfix">
-					<ul class="projects_description">
-						<li><span>&#9656;</span><strong> Project: </strong>SunGold Kiwi & Green Kiwi Product Campaign</li>
-						<li><span>&#9656;</span><strong> Client: </strong>Zespri</li>
-						<li><span>&#9656;</span><strong> Website: </strong><a href="http://www.zespri.com" target="_blank">www.zespri.com</a></li>
-						<li><span>&#9656;</span><strong> Medium: </strong>Newspaper / Roll Up Banner / Web Banner </li>
-						<li><span>&#9656;</span><strong> Language: </strong>Korean / Chinese / Japanese / Vietnamese </li>
-						<li><span>&#9656;</span><strong> Date: </strong>2015-2016</li>
-					</ul>
+			<section id="projects_inner">
+				<a href="#home" class="return_top">
+					<img src="images/assets/icon_return_top.svg" alt="Return Top" title="Return Top">
+				</a>
 
-					<img src="images/projects/Zespri_2015-2016_Product-Campaign_Main.jpg" alt="Temp" title="Temp">
+				<section class="section_wrapper"> 
+					<div class="projects_title contents_wrapper">
+						<h1>Taste the Difference!</h1>
+						<h2>Zespri Product Campaign</h2>
+					</div>
 
-					<p class="projects_description">Project Descriptions. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-					
-					<img src="images/projects/Zespri_2015-2016_Product-Campaign_SunGold-Kiwi_Print_1.jpg" alt="Temp" title="Temp">
-					<img src="images/projects/Zespri_2015-2016_Product-Campaign_SunGold-Kiwi_Print_2.jpg" alt="Temp" title="Temp">
-					<img src="images/projects/Zespri_2015-2016_Product-Campaign_SunGold-Kiwi_Green-Kiwi_Rollup-Banner.jpg" alt="Temp" title="Temp">
+					<img src="images/projects/zespri_2015-2016_product-campaign_main.jpg" alt="Zespri Product Campaign" title="Zespri Product Campaign">
 
-					<div id="zespri_bg" class="animation_bg"> 
-						<div class="animation_wrapper">
-							<img class="animation_image" style='max-width:728px' src="images/projects/Zespri_2015-2016_Product-Campaign_SunGold-Kiwi_Sina_728x90.gif" alt="Temp" title="Temp" >
-							<img class="animation_image" style='max-width:110px' src="images/projects/Zespri_2015-2016_Product-Campaign_SunGold-Kiwi_MissyUSA_110x393.gif" alt="Temp" title="Temp">
-							<img class="animation_image" style='max-width:160px' src="images/projects/Zespri_2015-2016_Product-Campaign_SunGold-Kiwi_Vivinavi_160x300.gif" alt="Temp" title="Temp">
+					<div class="paragraph contents_wrapper">
+						<h3>About Client</h3>
+						<p>Zespri is the world’s largest marketer of kiwifruit, owned by 2,500 current and former New Zealand kiwifruit growers. Zespri is selling to more than 54 countries and managing about 30% of the global traded volume. Zespri’s mission is to provide everyone with fresh, juicy, nutritious and delicious Zespri kiwifruit all year round.</p>
+					</div>
+
+					<img src="images/projects/zespri_2015-2016_product-campaign_sungold-kiwi_print_1.jpg" alt="Zespri Product Campaign Newspaper" title="Zespri Product Campaign Newspaper">
+					<img src="images/projects/zespri_2015-2016_product-campaign_sungold-kiwi_print_2.jpg" alt="Zespri Product Campaign Newspaper" title="Zespri Product Campaign Newspaper">
+					<img src="images/projects/zespri_2015-2016_product-campaign_sungold-kiwi_green-kiwi_rollup-banner.jpg" alt="Zespri Product Campaign Rollup Banner" title="Zespri Product Campaign Rollup Banner">
+					<div id="zespri_bg" class="gif_bg"> 
+						<div class="gif_wrapper">
+							<img class="gif_image" style='max-width:728px' src="images/projects/zespri_2015-2016_product-campaign_sungold-kiwi_print_sina_728x90.gif" alt="Zespri Product Campaign Web Banner" title="Zespri Product Campaign Web Banner" >
+							<img class="gif_image" style='max-width:110px' src="images/projects/zespri_2015-2016_product-campaign_sungold-kiwi_missyusa_110x393.gif" alt="Zespri Product Campaign Web Banner" title="Zespri Product Campaign Web Banner">
+							<img class="gif_image" style='max-width:160px' src="images/projects/zespri_2015-2016_product-campaign_sungold-kiwi_print_vivinavi_160x300.gif" alt="Zespri Product Campaign Web Banner" title="Zespri Product Campaign Web Banner">
 						</div>
-		   			</div>	
+					</div>
+
+					<div class="paragraph contents_wrapper">
+						<h3>Project Background</h3>
+						<p>Zespri’s goal is delivering the highest quality and refreshingly delicious kiwifruit which is loaded with healthy nutrients.</p>
+
+						<p>I loved to spread this great and delicious kiwifruit to people as much as possible. I put a lot of effort into the image-making process to make tasty and juicy looking outcome which will make the viewer’s mouth water. Also, these advertisements provide easy nutrition fact because Zespri products are not only tasty, also a great source of vitamin C, potassium, folate, etc.</p>
+
+						<p>This project targeted both general and Asian markets and was executed in advertisements in various languages.</p>
+
+						<div class="list clearfix">
+							<h3 class="col_50 no_border margin_right">Project Detail</h3>
+							<ul class="col_50 no_border margin_left">
+								<li>&#9656; Project: Product Campaign</li>
+								<li>&#9656; Client: Zespri</li>
+								<li>&#9656; Website: <a href="http://www.zespri.com" target="_blank">www.zespri.com</a></li>
+								<li>&#9656; Medium: Newspaper / Roll Up Banner / Web Banner</li>
+								<li>&#9656; Language: Korean / Chinese / Japanese / Vietnamese</li>
+								<li>&#9656; Period: 2015-2016</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			
+				<div class="projects_arrow_wrapper section_wrapper clearfix">
+					<a href="#">
+						<div class="page_arrow_left" onclick="plusDivs(-1)">&#10094; Prev</div>
+					</a>
+					<a href="#">
+						<div class="page_arrow_right" onclick="plusDivs(1)">Next &#10095;</div>
+					</a>
 				</div>
 
-				<div class="pagination_wrapper">
-					<a href="#" class="project_nav_button">&#8249;</a>
-					<a href="#" class="project_nav_button">&#8250;</a>
-				</div>
 			</section>
 
-			<footer id="contact">
-				<div class="contents_wrapper clearfix">
-					<h1>Let&rsquo;s Talk</h1>
-					<form>
-						<input id="name" type="text" placeholder="Name" required>
-						<input id="email" type="text" placeholder="Email" required>
-						<input id="subject" type="text" placeholder="Subject" required>
-						<textarea id="message" type="text" placeholder="Message" required></textarea>
-						<a href="#" class="button" type="submit" value="send">Send</a>
-					</form>
-					<a href="#">
-						<img alt="Email Icon" src="images/assets/contact_icon_email_64x64.png">
+
+			<footer id="contact" class="section_wrapper">
+				<div class="contents_wrapper">	
+					<h1>Let&rsquo;s talk</h1>
+					<h2>Contact me at seoncreative@gmail.com</h2>
+					<a href="mailto:toseonchoi@gmail.com">
+						<img alt="Email Icon" title="Email" src="images/assets/icon_email_b.png">
 					</a>
-					<a href="#">
-						<img alt="Linkedin Icon" src="images/assets/contact_icon_linkedin_64x64.png">
+					<a href="https://www.linkedin.com/in/toseonchoi" target="_blank">
+						<img alt="LinkedIn Icon" title="LinkedIn" src="images/assets/icon_linkedin_b.png">
 					</a>
-					<p>Copyright &copy; 2018, Seon Choi. All rights reserved.</p>
+					<p>Copyright &copy; 2018, Seon Choi. All rights reserved.</p>	
 				</div>
 			</footer>
 		</main>
 		<script src="js/main.js"></script>
+		
    	</body>
 </html>
+
+

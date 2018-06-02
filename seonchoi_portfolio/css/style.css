@@ -297,33 +297,34 @@ main {
 
 #gallery {
     position: relative;
-    height: 50%;
     padding: 0; 
 }
 
 .gallery_image { 
-    height: 50em;
-    /*height: calc(92vh - 4em); */
+
+    height: calc(92vh - 4em); 
 }
 
 .gallery_video {
     width: 100%;
-  
 }
 
 .slide_1 {
-    background: url(../images/projects/gallery_slide_golfbuddy_2015-2016_product-promotion_e-blast.jpg) no-repeat /*center center*/ scroll;
-    background-size: 100%; 
+    background: url(../images/projects/gallery_slide_1_golfbuddy_2015-2016_regular-subscription_e-blast.jpg) no-repeat center center scroll;
+    background-size: cover; 
+    background-attachment: fixed;
 }
 
 .slide_2 {
-    background: #fff;
-    background-size: 100%;
+    background: url(../images/projects/gallery_slide_hitejinro_2017_jinro-green-grape-branding_sns.gif) no-repeat center center scroll;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .slide_3 {
-    background: url(../images/projects/gallery_slide_korean-ginseng-corp_2015-2016_seasonal-promotion_print.jpg) no-repeat /*center center*/ scroll;
-    background-size: 100%;
+    background: url(../images/projects/gallery_slide_korean-ginseng-corp_2015-2016_seasonal-promotion_print.jpg) no-repeat center center scroll;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .fade {
@@ -347,9 +348,7 @@ main {
     position: absolute;
     width: 100%;
     left: 50%;
-    top: 0;
-    margin: 20em auto;
-    /*bottom: .75vh;*/
+    bottom: .75vh;
     transform: translate(-50%,0%);
 }
 
@@ -358,6 +357,7 @@ main {
     margin: 0 1em;
     color: rgba(28, 28, 28, 0.8);
     padding: .3em .7em;
+    font-weight: 400;
 }
 
 .page_arrow_left {
@@ -540,6 +540,30 @@ main {
 .projects_arrow_wrapper .page_arrow_left:active, .projects_arrow_wrapper .page_arrow_right:active {
     border: 1.5px solid #808080; 
     background: #808080; 
+}
+
+.gif_bg {
+    width: 100%;
+    margin: 0 auto 1%;
+}
+
+.gif_wrapper {
+    width: 80%;
+    max-width: 50em;
+    padding: 3.5em 0 2.75em 0;
+    margin: 0 auto;
+}
+
+.gif_image {
+    display: inline-block;
+    position: relative;
+    padding: .75em 1em;
+    box-sizing: content-box;
+}
+
+#zespri_bg {
+    background: url(../images/projects/zespri_2015-2016_product-campaign_sungold-kiwi_bg.jpg) no-repeat center center scroll;
+    background-size: cover;
 }
 
 
