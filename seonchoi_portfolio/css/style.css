@@ -312,19 +312,19 @@ main {
 .slide_1 {
     background: url(../images/projects/gallery_slide_1_golfbuddy_2015-2016_regular-subscription_e-blast.jpg) no-repeat center center scroll;
     background-size: cover; 
-    background-attachment: fixed;
+/*    background-attachment: fixed;*/
 }
 
 .slide_2 {
     background: url(../images/projects/gallery_slide_hitejinro_2017_jinro-green-grape-branding_sns.gif) no-repeat center center scroll;
     background-size: cover;
-    background-attachment: fixed;
+/*    background-attachment: fixed;*/
 }
 
 .slide_3 {
     background: url(../images/projects/gallery_slide_korean-ginseng-corp_2014-2016_seasonal-promotion_print.jpg) no-repeat center center scroll;
     background-size: cover;
-    background-attachment: fixed;
+/*    background-attachment: fixed;*/
 }
 
 .fade {
@@ -585,9 +585,9 @@ main {
 
 
 #clients {
-    background: url(../images/clients/clients_background2.jpg) no-repeat center center scroll;
+    background: url(../images/clients/clients_background.jpg) no-repeat center center scroll;
     background-size: cover;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 
 .clients_logo_wrapper {
