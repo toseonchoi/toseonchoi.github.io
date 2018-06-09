@@ -322,7 +322,7 @@ main {
 }
 
 .slide_3 {
-    background: url(../images/projects/gallery_slide_korean-ginseng-corp_2015-2016_seasonal-promotion_print.jpg) no-repeat center center scroll;
+    background: url(../images/projects/gallery_slide_korean-ginseng-corp_2014-2016_seasonal-promotion_print.jpg) no-repeat center center scroll;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -540,6 +540,20 @@ main {
 .projects_arrow_wrapper .page_arrow_left:active, .projects_arrow_wrapper .page_arrow_right:active {
     border: 1.5px solid #808080; 
     background: #808080; 
+}
+
+.video_wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video_wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .gif_bg {
