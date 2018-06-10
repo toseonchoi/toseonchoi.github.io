@@ -32,6 +32,11 @@ body {
     font-weight: 300;
     text-align: center;
     line-height: 1.4em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 img {
@@ -310,7 +315,7 @@ main {
 }
 
 .slide_1 {
-    background: url(../images/projects/gallery_slide_1_golfbuddy_2015-2016_regular-subscription_e-blast.jpg) no-repeat center center scroll;
+    background: url(../images/projects/gallery_slide_1_golfbuddy_2014-2016_regular-subscription_e-blast.jpg) no-repeat center center scroll;
     background-size: cover; 
 /*    background-attachment: fixed;*/
 }
