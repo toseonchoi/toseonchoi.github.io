@@ -563,12 +563,12 @@ main {
 
 .gif_bg {
     width: 100%;
-    margin: 0 auto 1%;
+    margin: 0 auto;
 }
 
 .gif_wrapper {
     width: 80%;
-    max-width: 50em;
+    max-width: 45em;
     padding: 3.5em 0 2.75em 0;
     margin: 0 auto;
 }
@@ -577,7 +577,12 @@ main {
     display: inline-block;
     position: relative;
     padding: .75em 1em;
-    box-sizing: content-box;
+    /*box-sizing: content-box;*/
+}
+
+#kgc_bg {
+    background: url(../images/projects/korean-ginseng-corp_2014-2016_seasonal-event_bg.jpg) no-repeat center center scroll;
+    background-size: cover;
 }
 
 #zespri_bg {
