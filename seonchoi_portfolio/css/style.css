@@ -32,11 +32,11 @@ body {
     font-weight: 300;
     text-align: center;
     line-height: 1.4em;
-    -webkit-user-select: none;
+/*    -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
-    user-select: none;
+    user-select: none;*/
 }
 
 img {
