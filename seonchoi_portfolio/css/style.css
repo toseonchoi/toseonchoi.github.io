@@ -549,8 +549,8 @@ main {
 
 .video_wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
+    padding-bottom: 56.25%; /* 16:9 */
     height: 0;
 }
 .video_wrapper iframe {
@@ -559,6 +559,13 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.sns_video_wrapper {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 4em .5em;
 }
 
 .gif_bg {
@@ -582,6 +589,11 @@ main {
 
 #kgc_bg {
     background: url(../images/projects/korean-ginseng-corp_2014-2016_seasonal-event_bg.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+
+#hitejinro_bg {
+    background: url(../images/projects/hitejinro_2016-2017_holiday-edition-promotion_bg.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
@@ -649,6 +661,14 @@ main {
 
 }
 
+@media only screen and (max-width: 1095px) {
+
+    .sns_video_wrapper iframe {
+        width: 350px;
+        height: 350px;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
 
 /*    .gallery_image {
@@ -657,7 +677,7 @@ main {
 
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 965px) {
 
     .contents_wrapper {
         width: 80%;
@@ -665,6 +685,11 @@ main {
 
     .clients_logo_wrapper {
         width: 95%;
+    }
+
+    .sns_video_wrapper iframe {
+        width: 400px;
+        height: 400px;
     }
 
 }
@@ -874,8 +899,35 @@ main {
         margin: 3em 3.5em 1em;
     }
 
+    .sns_video_wrapper {
+        position: relative;
+        width: 95%;
+        margin: 0 auto;
+        padding: 2em .5em;
+    }
+
+    .sns_video_wrapper iframe {
+        width: 350px;
+        height: 350px;
+    }
 }
 
+@media only screen and (max-width: 415px) {
+
+    .sns_video_wrapper {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .sns_video_wrapper iframe {
+        display: block;
+        text-align: center;
+        width: 415px;
+        height: 415px;
+    }
+}
 
 /*--TEST-------------------------------------------------------------------------------------------------------*/
 
