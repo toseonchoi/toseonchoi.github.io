@@ -553,6 +553,7 @@ main {
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
 }
+
 .video_wrapper iframe {
     position: absolute;
     top: 0;
@@ -566,6 +567,11 @@ main {
     width: 90%;
     margin: 0 auto;
     padding: 4em .5em;
+}
+
+.sns_video_wrapper iframe {
+    width: 20em;
+    height: 20em;
 }
 
 .gif_bg {
@@ -661,14 +667,6 @@ main {
 
 }
 
-@media only screen and (max-width: 1095px) {
-
-    .sns_video_wrapper iframe {
-        width: 350px;
-        height: 350px;
-    }
-}
-
 @media only screen and (max-width: 1024px) {
 
 /*    .gallery_image {
@@ -685,11 +683,6 @@ main {
 
     .clients_logo_wrapper {
         width: 95%;
-    }
-
-    .sns_video_wrapper iframe {
-        width: 400px;
-        height: 400px;
     }
 
 }
@@ -857,6 +850,8 @@ main {
         width: 30%;
     }
 
+
+
 }
 
 @media only screen and (max-width: 490px) {
@@ -899,35 +894,8 @@ main {
         margin: 3em 3.5em 1em;
     }
 
-    .sns_video_wrapper {
-        position: relative;
-        width: 95%;
-        margin: 0 auto;
-        padding: 2em .5em;
-    }
-
-    .sns_video_wrapper iframe {
-        width: 350px;
-        height: 350px;
-    }
 }
 
-@media only screen and (max-width: 415px) {
-
-    .sns_video_wrapper {
-        position: relative;
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .sns_video_wrapper iframe {
-        display: block;
-        text-align: center;
-        width: 415px;
-        height: 415px;
-    }
-}
 
 /*--TEST-------------------------------------------------------------------------------------------------------*/
 
