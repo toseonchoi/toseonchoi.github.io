@@ -110,91 +110,15 @@ function showDivs(n) {
 /*--SMOOTH SCROLL-------------------------------------------------------------------------------------------------------*/
 
 
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 500, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
 
-/*--SMOOTH SCROLL-------------------------------------------------------------------------------------------------------*/
-
-
-// (function() // Code in a function to create an isolate scope
-// {
-// var speed = 500;
-// var moving_frequency = 15; // Affects performance !
-// var links = document.getElementsByTagName('a');
-// var href;
-// for(var i=0; i<links.length; i++)
-// {   
-//     href = (links[i].attributes.href === undefined) ? null : links[i].attributes.href.nodeValue.toString();
-//     if(href !== null && href.length > 1 && href.substr(0, 1) == '#')
-//     {
-//         links[i].onclick = function()
-//         {
-//             var element;
-//             var href = this.attributes.href.nodeValue.toString();
-//             if(element = document.getElementById(href.substr(1)))
-//             {
-//                 var hop_count = speed/moving_frequency
-//                 var getScrollTopDocumentAtBegin = getScrollTopDocument();
-//                 var gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hop_count;
-
-//                 for(var i = 1; i <= hop_count; i++)
-//                 {
-//                     (function()
-//                     {
-//                         var hop_top_position = gap*i;
-//                         setTimeout(function(){  window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin); }, moving_frequency*i);
-//                     })();
-//                 }
-//             }
-
-//             return false;
-//         };
-//     }
-// }
-
-// var getScrollTopElement =  function (e)
-// {
-//     var top = 0;
-
-//     while (e.offsetParent != undefined && e.offsetParent != null)
-//     {
-//         top += e.offsetTop + (e.clientTop != null ? e.clientTop : 0);
-//         e = e.offsetParent;
-//     }
-
-//     return top;
-// };
-
-// var getScrollTopDocument = function()
-// {
-//     return document.documentElement.scrollTop + document.body.scrollTop;
-// };
-// })();
-
-
 /*--TEST-------------------------------------------------------------------------------------------------------*/
-
-
