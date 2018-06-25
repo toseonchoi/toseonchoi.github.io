@@ -39,7 +39,6 @@ body {
     user-select: none;*/
 }
 
-
 img {
     width: 100%;
     display: block;
@@ -587,12 +586,20 @@ main {
     margin: 0 auto;
 }
 
-.gif_image {
+.gif_image_h, .gif_image_v {
     display: inline-block;
     position: relative;
     padding: .75em 1em;
-    /*box-sizing: content-box;*/
 }
+
+.gif_image_h {
+    max-width: 40em;
+}
+
+.gif_image_v {
+    max-width: 8em;
+}
+
 
 #kgc_bg {
     background: url(../images/projects/korean-ginseng-corp_2014-2016_seasonal-event_bg.jpg) no-repeat center center scroll;
@@ -797,6 +804,13 @@ main {
 }
 
 
+@media only screen and (max-width: 650px) {
+
+        .gif_image_v {
+        max-width: 7.5em;
+    }
+}
+
 @media only screen and (max-width: 600px) {
 
     body {
@@ -850,6 +864,7 @@ main {
     .clients_logo_wrapper img {
         width: 30%;
     }
+
 }
 
 @media only screen and (max-width: 490px) {
@@ -890,6 +905,10 @@ main {
         font-size: .8em;
         line-height: 1.25em;
         margin: 3em 3.5em 1em;
+    }
+
+    .gif_image_v {
+        max-width: 5.5em;
     }
 
 }
