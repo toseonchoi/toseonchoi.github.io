@@ -562,7 +562,7 @@ main {
 
 .video_wrapper {
     position: relative;
-    padding-top: 25px;
+/*    padding-top: 1.5em;*/
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
 }
@@ -579,12 +579,23 @@ main {
     position: relative;
     width: 90%;
     margin: 0 auto;
-    padding: 4em .5em;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 
-.sns_video_wrapper iframe {
+.ratio_11 iframe {
     width: 20em;
     height: 20em;
+}
+
+.ratio_169 iframe {
+    width: 20em;
+    height: 11.2em;
+}
+
+.ratio_cover iframe {
+    width: 40em;
+    height: 16.5em;
 }
 
 .gif_bg {
@@ -614,17 +625,22 @@ main {
 }
 
 
-#kgc_bg {
+.kgc_bg {
     background: url(../images/projects/korean-ginseng-corp_2014-2016_seasonal-event_bg.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
-#hitejinro_bg {
+.hitejinro_bg {
     background: url(../images/projects/hitejinro_2016-2017_holiday-edition-promotion_bg.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
-#zespri_bg {
+.hitejinro_sns_bg {
+    background: url(../images/projects/hitejinro_2016-2017_social-media_bg.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+
+.zespri_bg {
     background: url(../images/projects/zespri_2015-2016_product-campaign_sungold-kiwi_bg.jpg) no-repeat center center scroll;
     background-size: cover;
 }
@@ -704,6 +720,11 @@ main {
 
     .clients_logo_wrapper {
         width: 95%;
+    }
+
+    .ratio_cover iframe {
+        width: 30em;
+        height: 12.375em;
     }
 
 }
@@ -817,10 +838,15 @@ main {
 }
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 670px) {
 
-        .gif_image_v {
+    .gif_image_v {
         max-width: 7.5em;
+    }
+
+    .ratio_cover iframe {
+        width: 20em;
+        height: 8.25em;
     }
 }
 
