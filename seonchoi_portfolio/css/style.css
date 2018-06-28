@@ -427,6 +427,19 @@ main {
     background: #808080; 
 }
 
+#character {
+    font-size: .9em;
+    font-weight: 500;
+    color: #484848;
+    margin-top: 1.1111em;
+}
+
+#character li {
+    list-style: none;
+    display: inline;
+    padding-left: 1em;
+}
+
 .list {
     border-top: 1.5px solid #484848;
     margin-top: 3em;
