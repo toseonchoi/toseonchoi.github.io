@@ -884,12 +884,19 @@ main {
         height: calc(45vh - 3.5em); 
     }
 
+    .page_arrow_wrapper {
+        bottom: 16vh;
+    }
+
     .page_arrow_left, .page_arrow_right {
+        font-size: 1.5em;
         margin: 0 5.5%;
+        padding: .3em .3em;
     }
 
     .slide_dot {
-        margin: 0 .5em;
+        display: none;
+        /*margin: 0 .5em;*/
     }
 
     .fade {
