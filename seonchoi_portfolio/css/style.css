@@ -858,7 +858,8 @@ main {
     }
 
     .section_wrapper {
-        width: 100%
+        width: 100%;
+        padding: 3em 0;
     }
 
     .contents_wrapper {
