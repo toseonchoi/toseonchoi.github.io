@@ -306,30 +306,22 @@ main {
 }
 
 .gallery_image { 
-
     height: calc(92vh - 4em); 
 }
 
-.gallery_video {
-    width: 100%;
-}
-
 .slide_1 {
-    background: url(../images/projects/gallery_slide_1_golfbuddy_2014-2016_regular-subscription_e-blast.jpg) no-repeat center center scroll;
+    background: url(../images/projects/gallery_slide_hitejinro_2016-2017_social-media_4th-of-july-captain-hite.jpg) no-repeat center center scroll;
     background-size: cover; 
-/*    background-attachment: fixed;*/
 }
 
 .slide_2 {
-    background: url(../images/projects/gallery_slide_hitejinro_2017_jinro-green-grape-branding_sns.gif) no-repeat center center scroll;
+    background: url(../images/projects/gallery_slide_golfbuddy_2014-2016_regular-subscription_e-blast.jpg) no-repeat center center scroll;
     background-size: cover;
-/*    background-attachment: fixed;*/
 }
 
 .slide_3 {
-    background: url(../images/projects/gallery_slide_korean-ginseng-corp_2014-2016_seasonal-promotion_print.jpg) no-repeat center center scroll;
+    background: url(../images/projects/gallery_slide_korean-ginseng-corp_2014-2016_seasonal-event_standing-banner.jpg) no-repeat center center scroll;
     background-size: cover;
-/*    background-attachment: fixed;*/
 }
 
 .fade {
@@ -698,21 +690,26 @@ main {
 
 @media only screen and (max-width: 1180px) {
 
-/*    .gallery_image {
-        height: calc(90vh - 4em); 
-    }*/
+    .gallery_image { 
+        height: calc(85vh - 4em); 
+    }
 
 }
 
 @media only screen and (max-width: 1024px) {
 
-/*    .gallery_image {
-        height: calc(85vh - 4em); 
-    }*/
+    .gallery_image { 
+        height: calc(80vh - 4em); 
+    }
 
 }
 
 @media only screen and (max-width: 965px) {
+
+
+    .gallery_image { 
+        height: calc(70vh - 4em); 
+    }
 
     .contents_wrapper {
         width: 80%;
@@ -804,9 +801,9 @@ main {
         margin-right: calc(4% + .75em);
     }
 
-/*    .gallery_image {
-        height: calc(70vh - 3.5em); 
-    }*/
+    .gallery_image {
+        height: calc(60vh - 3.5em); 
+    }
 
     .list {
         padding: 3em 2em 0;
@@ -839,6 +836,10 @@ main {
 
 
 @media only screen and (max-width: 670px) {
+
+    .gallery_image {
+        height: calc(55vh - 3.5em); 
+    }
 
     .gif_image_v {
         max-width: 7.5em;
@@ -879,9 +880,9 @@ main {
         transition: none;
     }
 
-/*    .return_top.show {
-        bottom: 2em;  
-    }*/
+    .gallery_image {
+        height: calc(45vh - 3.5em); 
+    }
 
     .page_arrow_left, .page_arrow_right {
         margin: 0 5.5%;
