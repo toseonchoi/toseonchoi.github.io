@@ -8,7 +8,7 @@
 /*LoVeHAte*/
 
 /*
-050218
+red= #ff1919; rgb (255, 25, 25);
 white= #ffffff;
 bg-grey= #f0f0f0;
 mid-grey (active) = #b2b2b2;
@@ -27,16 +27,11 @@ Paragraphc Space 1em;
 body {
     background: #ffffff;
     font-family: 'Work Sans', 'Helvetica', 'Arial', sans-serif;
-    color: #808080;
+    color: #484848;
     font-size: 18px;
     font-weight: 300;
     text-align: center;
     line-height: 1.4em;
-/*    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;*/
 }
 
 img {
@@ -54,10 +49,6 @@ p {
     margin-bottom: 0;
 }
 
-h1, h2, h3 {
-    color: #484848;
-}
-
 h1 {
     font-size: 2.75em;
     font-weight: 300;
@@ -67,7 +58,7 @@ h1 {
 h1::after {
     display: block;
     content: "";
-    border-bottom: 1.75px solid #484848;
+    border-bottom: 1.75px solid #ff1919;;
     width: .75em;
     margin: .25em auto; 
 }
@@ -92,7 +83,7 @@ h4 {
 h4::after {
     display: block;
     content: "";
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #ff1919;
     width: 1.5em;
     margin: .5em auto; 
 }
@@ -108,6 +99,11 @@ a:active {
 
 a:visited {
     color: inherit;
+}
+
+span {
+    color: #ff1919;
+    font-weight: 500;
 }
 
 .clearfix:after {
@@ -251,7 +247,7 @@ header .section_wrapper {
 }
 
 .menu a:hover {
-    border-bottom: 1.5px solid #808080; 
+    border-bottom: 1.5px solid #ff1919;; 
 }
 
 .menu a:active {
@@ -400,9 +396,9 @@ main {
     width: max-content;
     font-weight: 500;
     padding: .3em 1em;
-    margin: 2.5em auto 0;
-    border: 1.5px solid #484848;
-    color: #484848; 
+    margin: 2.25em auto 0;
+    background-color: #ff1919;
+    color: #f0f0f0;
 }
 
 .button:visited {
@@ -415,7 +411,6 @@ main {
 }
 
 .button:active {
-    border: 1.5px solid #808080; 
     background: #808080; 
 }
 
@@ -789,7 +784,7 @@ main {
 
     .menu a:hover {
         border-bottom: none;
-        background: #808080;
+        background: #ff1919;
         opacity: 0.8; 
     }
 
