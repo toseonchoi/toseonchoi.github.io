@@ -401,17 +401,17 @@ main {
     color: #f0f0f0;
 }
 
-.button:visited {
-    color: #484848; 
-}
+/*.button:visited {
+    color: #f0f0f0;
+}*/
 
 .button:hover {
     background: #484848;
-    color: #f0f0f0;
 }
 
 .button:active {
-    background: #808080; 
+    background: #808080;
+    color: #f0f0f0;
 }
 
 #character {
