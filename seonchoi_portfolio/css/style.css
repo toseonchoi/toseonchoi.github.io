@@ -401,12 +401,14 @@ main {
     color: #f0f0f0;
 }
 
-/*.button:visited {
+.button:visited {
+    background-color: #ff1919;
     color: #f0f0f0;
-}*/
+}
 
 .button:hover {
     background: #484848;
+    color: #f0f0f0;
 }
 
 .button:active {
