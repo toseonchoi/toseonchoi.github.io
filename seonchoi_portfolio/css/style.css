@@ -429,6 +429,13 @@ main {
     padding-left: 1em;
 }
 
+.icon_checkbox {
+    display: inline;
+    vertical-align: -1px;
+    width: .75em;
+    height: .75em;
+}
+
 .list {
     border-top: 1.5px solid #484848;
     margin-top: 2.5em;
