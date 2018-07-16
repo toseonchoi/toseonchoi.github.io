@@ -427,6 +427,7 @@ main {
     list-style: none;
     display: inline;
     padding-left: 1em;
+    white-space:nowrap; 
 }
 
 .icon_checkbox {
