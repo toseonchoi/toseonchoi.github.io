@@ -20,17 +20,14 @@ setInterval(function() {
 function hasScrolled() {
     var st = $(this).scrollTop();
     
-    // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
     
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
+
         $('header').removeClass('header_down').addClass('header_up');
     } else {
-        // Scroll Up
+
         if(st + $(window).height() < $(document).height()) {
             $('header').removeClass('header_up').addClass('header_down');
         }
@@ -114,43 +111,26 @@ function showDivs(n) {
 
 
 $(document).ready(function(){
-  // Add smooth scrolling to all links
+
   $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
+
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
+
       event.preventDefault();
 
-      // Store hash
+
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 500, function(){
    
-        // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    }
   });
 });
-
-
-/*--SMOOTH SCROLL2-------------------------------------------------------------------------------------------------------*/
-
-
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     });
-// });
 
 
 /*--TEST-------------------------------------------------------------------------------------------------------*/
