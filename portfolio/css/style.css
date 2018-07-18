@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+/*@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
+*/
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 
@@ -16,19 +17,13 @@ mid-dark grey (body, hover)= #808080;
 dark grey (head)= #484848; rgba(28, 28, 28, 0.8);
 */
 
-/*
-Space rule:
-Large Space 6em;
-Small Space 3em;
-Paragraphc Space 1em;
-
 /*--ASSET---------------------------------------------------------------------------------------------------------*/
 
 body {
     background: #ffffff;
-    font-family: 'Work Sans', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     color: #484848;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     text-align: center;
     line-height: 1.4em;
@@ -50,9 +45,10 @@ p {
 }
 
 h1 {
-    font-size: 2.75em;
-    font-weight: 300;
+    font-size: 3em;
+    font-weight: 900;
     line-height: 1em;
+    text-transform: uppercase;
 }
 
 h1::after {
@@ -60,7 +56,7 @@ h1::after {
     content: "";
     border-bottom: 1.75px solid #ff1919;;
     width: .75em;
-    margin: .25em auto; 
+    margin: .325em auto; 
 }
 
 h2 {
@@ -70,14 +66,18 @@ h2 {
 }
 
 h3 {
-    font-size: 1em;
-    font-weight: 500;
-    margin: 0 auto 1em;
+    font-size: 1.25em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 auto .8em;
 }
 
 h4 {
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 h4::after {
@@ -240,8 +240,10 @@ header .section_wrapper {
 
 .menu a {
     color: #484848;
-    font-size: .9em;
-    font-weight: 500;
+    font-size: .8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     margin-left: 1.5em;
     transition: max-height 0.5s ease-in-out;
 }
@@ -393,10 +395,13 @@ main {
 .button {
     display: inline-block;
     cursor: pointer;
-    width: max-content;
     font-weight: 500;
+    font-size: .9em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: max-content;
     padding: .3em 1em;
-    margin: 2.25em auto 0;
+    margin: 3em auto 0;
     background-color: #ff1919;
     color: #f0f0f0;
 }
@@ -416,18 +421,22 @@ main {
     color: #f0f0f0;
 }
 
-#character {
+.character {
     font-size: .95em;
     font-weight: 500;
     color: #484848;
-    margin-top: 1.1111em;
+    margin-top: 1em;
 }
 
-#character li {
+.character li {
     list-style: none;
     display: inline;
     padding-left: 1em;
     white-space:nowrap; 
+}
+
+.character:last-of-type {
+    margin-top: 0em;
 }
 
 .icon_checkbox {
@@ -438,10 +447,10 @@ main {
 }
 
 .list {
-    border-top: 1.5px solid #484848;
-    margin-top: 2.5em;
+    border-top: 1px solid #484848;
+    margin-top: 3em;
     text-align: left;
-    padding: 2em 0 0;
+    padding: 3em 0 0;
 }
 
 .list li {
@@ -454,7 +463,7 @@ main {
 
 .list li:last-of-type{
     margin-bottom: 0;
-} 
+}
 
 .list p {
     font-size: .9em;
@@ -528,11 +537,11 @@ main {
 }
 
 #projects_inner .contents_wrapper {
-    padding: 3em 0;
+    padding: 4em 0;
 }
 
 #projects_inner .projects_title {
-    padding: 3em 0 1em;
+    padding: 3em 0 3em;
 }
 
 #projects_inner .projects_arrow_wrapper {
@@ -674,18 +683,18 @@ main {
 
 #contact {
     background: #fff;
-    padding: 3em 0 2em;  
+    padding: 3.5em 0 2em;  
 }
 
 #contact img {
     display: inline;
     width: 2em;
     height: 2em;
-    margin-top: -.25em;
+    margin-top: -.5em;
 }
 
 #contact p {
-    font-size: .75em;
+    font-size: .65em;
     margin: 3em 0 0;
 }
 
@@ -749,12 +758,6 @@ main {
     header .section_wrapper {
         width: 100%;
     }
-
-/*    #logo {
-        width: 8em;
-        height: 3.5em;
-        margin-left: 4%;
-    }*/
 
     #logo {
         left: 4.5%;
@@ -908,7 +911,6 @@ main {
 
     .slide_dot {
         display: none;
-        /*margin: 0 .5em;*/
     }
 
     .fade {
