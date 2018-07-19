@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
-/*@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
-*/
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/*2018-07-19 01:07*/
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 /*--COLOR PALETTE-------------------------------------------------------------------------------------------------*/
 
@@ -166,18 +165,20 @@ header .section_wrapper {
 
 #logo {
     position: absolute;
-    width: 2em;
-    height: 4em;
-    padding: 0 2em 0 .5em;
-    box-sizing: content-box;
     z-index: 10;
+    box-sizing: content-box;
+    width: 1.125em;
+    height: 4em;
+    padding-right: 2em;
+    margin-left: .75em;
 }
 
 #nav_top {
     position: absolute;
     right: 0;
     height: 4em;
-    padding: 1.25em .75em 0 0;
+    padding: 1.25em 0;
+    margin-right: .75em;
 }
 
 #checkbox {
@@ -278,7 +279,7 @@ header .section_wrapper {
 }
 
 .return_top.show {
-    bottom: 2em;
+    bottom: 1.5em;
 }
 
 .return_top:hover {
@@ -690,7 +691,7 @@ main {
 
 #contact {
     background: #fff;
-    padding: 3.5em 0 2em;  
+    padding: 3.5em 0 1.5em;  
 }
 
 #contact img {
@@ -702,7 +703,7 @@ main {
 
 #contact p {
     font-size: .65em;
-    margin: 3em 0 0;
+    margin: 4em 0 0;
 }
 
 
@@ -767,13 +768,14 @@ main {
     }
 
     #logo {
-        padding-left: calc(4% + .25em);
+        margin-left: calc(4% + .75em);
         height: 3.25em;
     }
 
     #nav_top {
         width: 100%;
         height: 3.5em;
+        margin-right: 0em;
     }
 
     .hamburger_box {
@@ -885,8 +887,7 @@ main {
     }
 
     #logo {
-        padding: 0 2em 0 2em;
-        height: 3.25em;
+        margin-left: 7.5%;
     }
 
     .hamburger_box {
@@ -901,14 +902,14 @@ main {
     }
 
     .gallery_image {
-        height: calc(65vh - 3.5em); 
+        height: calc(60vh - 3.5em); 
     }
 
     .page_arrow_wrapper {
         bottom: 25vh;
     }
 
-    .page_arrow_left, .page_arrow_right {
+    #gallery .page_arrow_left, #gallery .page_arrow_right {
         font-size: 1.5em;
         margin: 0 5.5%;
         padding: .3em .3em;
@@ -939,14 +940,6 @@ main {
         font-size: 2.25em;
     }
 
-    .return_top {
-        bottom: 1.5em;
-    }
-
-    .return_top.show {
-        bottom: 2.5em;  
-    }
-
     .list {
         padding: 3em .25em 0 .5em;
     }
@@ -968,9 +961,7 @@ main {
     }
 
     #contact p {
-        font-size: .8em;
-        line-height: 1.25em;
-        margin: 3em 3.5em 1em;
+        margin: 2.5em 0 0;
     }
 
     .gif_image_v {
