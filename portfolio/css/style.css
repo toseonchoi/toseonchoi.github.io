@@ -166,9 +166,10 @@ header .section_wrapper {
 
 #logo {
     position: absolute;
-    left: .5em;
     width: 2em;
     height: 4em;
+    padding: 0 2em 0 .5em;
+    box-sizing: content-box;
     z-index: 10;
 }
 
@@ -551,9 +552,15 @@ main {
 }
 
 .projects_arrow_wrapper .page_arrow_left, .projects_arrow_wrapper .page_arrow_right {
-    cursor: pointer;
     margin: 0;
-    border: 1.5px solid #484848;
+    border: 1px solid #484848;
+    background-color: transparent;
+    color: #484848;
+}
+
+.projects_arrow_wrapper .page_arrow_left:visited, .projects_arrow_wrapper .page_arrow_right:visited {
+    background-color: transparent;
+    color: #484848;
 }
 
 .projects_arrow_wrapper .page_arrow_left:hover, .projects_arrow_wrapper .page_arrow_right:hover {
@@ -562,13 +569,13 @@ main {
 }
 
 .projects_arrow_wrapper .page_arrow_left:active, .projects_arrow_wrapper .page_arrow_right:active {
-    border: 1.5px solid #808080; 
+    border: 1px solid #808080; 
     background: #808080; 
+    color: #f0f0f0;
 }
 
 .video_wrapper {
     position: relative;
-/*    padding-top: 1.5em;*/
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
 }
@@ -760,7 +767,7 @@ main {
     }
 
     #logo {
-        left: 4.5%;
+        padding-left: calc(4% + .25em);
         height: 3.25em;
     }
 
@@ -867,9 +874,6 @@ main {
 
 @media only screen and (max-width: 600px) {
 
-    body {
-        font-size: 16px;
-    }
 
     .section_wrapper {
         width: 100%;
@@ -881,7 +885,8 @@ main {
     }
 
     #logo {
-        margin-left: 2.5%;
+        padding: 0 2em 0 2em;
+        height: 3.25em;
     }
 
     .hamburger_box {
@@ -896,11 +901,11 @@ main {
     }
 
     .gallery_image {
-        height: calc(45vh - 3.5em); 
+        height: calc(65vh - 3.5em); 
     }
 
     .page_arrow_wrapper {
-        bottom: 16vh;
+        bottom: 25vh;
     }
 
     .page_arrow_left, .page_arrow_right {
