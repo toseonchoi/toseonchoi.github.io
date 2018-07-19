@@ -554,7 +554,7 @@ main {
 .projects_arrow_wrapper .page_arrow_left, .projects_arrow_wrapper .page_arrow_right {
     margin: 0;
     border: 1px solid #484848;
-    background-color: #f0f0f0;
+    background-color: #fff;
     color: #484848;
 }
 
