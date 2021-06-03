@@ -81,7 +81,7 @@ function currentDiv(n) {
 
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("gallery_image");
+  var x = document.getElementsByClassName("hero_image");
   var dots = document.getElementsByClassName("slide_dot");
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length}

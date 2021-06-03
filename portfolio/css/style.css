@@ -36,7 +36,7 @@ body {
     background: #ffffff;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     color: #484848;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     text-align: center;
     line-height: 1.4em;
@@ -308,7 +308,7 @@ header .section_wrapper {
 }
 
 
-/*--MAIN-GALLERY------------------------------------------------------------------------------------------------------*/
+/*--MAIN-hero------------------------------------------------------------------------------------------------------*/
 
 
 main {
@@ -317,27 +317,27 @@ main {
     top: 4em;
 }
 
-#gallery {
+#hero {
     position: relative;
     padding: 0; 
 }
 
-.gallery_image { 
-    height: calc(92vh - 4em); 
+.hero_image { 
+    height: calc(88vh - 4em); 
 }
 
 .slide_1 {
-    background: url(../images/projects/slide/slide_1.jpg) no-repeat center center scroll;
+    background: url(../images/projects/hero/hero_1.jpg) no-repeat center center scroll;
     background-size: cover; 
 }
 
 .slide_2 {
-    background: url(../images/projects/slide/slide_2.jpg) no-repeat center center scroll;
+    background: url(../images/projects/hero/hero_2.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
 .slide_3 {
-    background: url(../images/projects/slide/slide_3.jpg) no-repeat center center scroll;
+    background: url(../images/projects/hero/hero_3.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
@@ -432,7 +432,7 @@ main {
     padding: .3em 1em;
     margin: 3em auto 0;
     background-color: #ff1919;
-    color: #f0f0f0;
+    color: #ffffff;
 }
 
 .button:visited {
@@ -486,7 +486,7 @@ main {
     list-style: none;
     font-size: .9em;
     margin-bottom: .5em;
-    text-indent: -1em;
+    text-indent: -.75em;
     padding-left: 1em;
 
 }
@@ -641,7 +641,7 @@ main {
     width: 22em;
 }
 
-.gif_bg {
+/*.gif_bg {
     width: 100%;
     margin: 0 auto;
 }
@@ -665,26 +665,76 @@ main {
 
 .gif_image_v {
     max-width: 8em;
+}*/
+
+.align_bg {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.align_wrapper {
+    width: 80%;
+    max-width: 45em;
+    padding: 3.5em 0 2.75em 0;
+    margin: 0 auto;
+}
+
+.align_wrapper_wide {
+    width: 80%;
+    max-width: 64em;
+    padding: 3.5em 0 2.75em 0;
+    margin: 0 auto;
+}
+
+.align_image_h, .align_image_v {
+    display: inline-block;
+    position: relative;
+    padding: .75em 1em;
+}
+
+.align_image_h {
+    max-width: 40em;
+}
+
+.align_image_v {
+    max-width: 8em;
+}
+
+.align_image_by3 {
+    max-width: 20em;
+    padding: 0em 1em 2em 1em;
+    display: inline-block;
+
 }
 
 
-.kgc_bg {
-    background: url(../images/projects/korean-ginseng-corp_2014-2016_seasonal-event_bg.jpg) no-repeat center center scroll;
+.skechers_bg {
+    background: url(../images/projects/skechers/skechers_2019_2021_email-blast_bg.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+
+.ogn_osm_bg {
+    background: url(../images/projects/ogn/ogn_2018_osm_bg.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
 .hitejinro_bg {
-    background: url(../images/projects/hitejinro_2016-2017_holiday-edition-promotion_bg.jpg) no-repeat center center scroll;
+    background: url(../images/projects/hitejinro/hitejinro_2016-2017_holiday-edition-promotion_bg.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
 .hitejinro_sns_bg {
-    background: url(../images/projects/hitejinro_2016-2017_social-media_bg.jpg) no-repeat center center scroll;
+    background: url(../images/projects/hitejinro/hitejinro_2016-2017_social-media_bg.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+
+.kgc_bg {
+    background: url(../images/projects/korea-ginseng-corp/korea-ginseng-corp_2014-2016_cheong-kwan-jang_seasonal-event_bg.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
 .zespri_bg {
-    background: url(../images/projects/zespri_2015-2016_product-campaign_bg.jpg) no-repeat center center scroll;
+    background: url(../images/projects/zespri/zespri_2015-2016_product-campaign_bg.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
@@ -741,7 +791,7 @@ main {
 
 @media only screen and (max-width: 1180px) {
 
-    .gallery_image { 
+    .hero_image { 
         height: calc(85vh - 4em); 
     }
 
@@ -749,12 +799,11 @@ main {
 
 @media only screen and (max-width: 1024px) {
 
-    .gallery_image { 
+    .hero_image { 
         height: calc(80vh - 4em); 
     }
 
 }
-
 
 @media only screen and (max-width: 950px) {
 
@@ -855,7 +904,7 @@ main {
         margin-right: calc(4% + .75em);
     }
 
-    .gallery_image {
+    .hero_image {
         height: calc(60vh - 3.5em); 
     }
 
@@ -941,7 +990,7 @@ main {
         bottom: 1.5em;
     }
 
-    .gallery_image {
+    .hero_image {
         height: calc(60vh - 3.5em); 
     }
 
@@ -986,22 +1035,22 @@ main {
         transition: none;
     }
 
-    .gallery_image { 
+    .hero_image { 
         height: calc(102vh - 4em); 
     }
 
     .slide_1 {
-        background: url(../images/projects/slide/slide_mobile_1.jpg) no-repeat center center scroll;
+        background: url(../images/projects/hero/hero_mobile_1.jpg) no-repeat center center scroll;
         background-size: cover; 
     }
 
     .slide_2 {
-        background: url(../images/projects/slide/slide_mobile_2.jpg) no-repeat center center scroll;
+        background: url(../images/projects/hero/hero_mobile_2.jpg) no-repeat center center scroll;
         background-size: cover;
     }
 
     .slide_3 {
-        background: url(../images/projects/slide/slide_mobile_3.jpg) no-repeat center center scroll;
+        background: url(../images/projects/hero/hero_mobile_3.jpg) no-repeat center center scroll;
         background-size: cover;
     }
 
