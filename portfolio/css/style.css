@@ -702,16 +702,26 @@ main {
 
 .align_image_by3 {
     max-width: 20em;
-    padding: 0em 1em 2em 1em;
+    padding: 1em;
     display: inline-block;
 
 }
 
 
+/*--BACKGROUND-------------------------------------------------------------------------------------------------------*/
+
+
 .skechers_bg {
+    background: #828c91;
+    width: 100%;
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+/*.skechers_bg {
     background: url(../images/projects/skechers/skechers_2019_2021_email-blast_bg.jpg) no-repeat center center scroll;
     background-size: cover;
-}
+}*/
 
 .ogn_osm_bg {
     background: url(../images/projects/ogn/ogn_2018_osm_bg.jpg) no-repeat center center scroll;
