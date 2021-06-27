@@ -807,6 +807,20 @@ main {
 
 }
 
+@media only screen and (max-width: 1080px) {
+
+    .hero_image { 
+        height: calc(85vh - 4em); 
+    }
+
+    .align_image_by3 {
+    max-width: 18em;
+    padding: 1em;
+    display: inline-block;
+    }
+
+}
+
 @media only screen and (max-width: 1024px) {
 
     .hero_image { 
@@ -814,6 +828,16 @@ main {
     }
 
 }
+
+@media only screen and (max-width: 975px) {
+
+    .align_image_by3 {
+    max-width: 16em;
+    padding: 1em;
+    display: inline-block;
+    }
+}
+
 
 @media only screen and (max-width: 950px) {
 
@@ -836,6 +860,15 @@ main {
 /*        height: 19.04em;*/
     }
 
+}
+
+@media only screen and (max-width: 870px) {
+
+    .align_image_by3 {
+    max-width: 14em;
+    padding: 1em;
+    display: inline-block;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -947,6 +980,15 @@ main {
 
 }
 
+@media only screen and (max-width: 710px) {
+
+    .align_image_by3 {
+    max-width: 11em;
+    padding: 1em;
+    display: inline-block;
+    }
+}
+
 
 @media only screen and (max-width: 670px) {
 
@@ -1029,6 +1071,12 @@ main {
 
     .clients_logo_wrapper img {
         width: 30%;
+    }
+
+    .align_image_by3 {
+    max-width: 10em;
+    padding: 1em;
+    display: inline-block;
     }
 
 }
@@ -1121,6 +1169,12 @@ main {
     .ratio_169 .video_size {
         width: 20em;
 /*        height: 11.2em;*/
+    }
+
+    .align_image_by3 {
+    max-width: 11em;
+    padding: 1em;
+    display: inline-block;
     }
 
 }
