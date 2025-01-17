@@ -327,17 +327,17 @@ main {
 }
 
 .slide_1 {
-    background: url(../assets/banners/hero_1.jpg) no-repeat center center scroll;
+    background: url(../assets/hero/hero_desktop_1.jpg) no-repeat center center scroll;
     background-size: cover; 
 }
 
 .slide_2 {
-    background: url(../assets/banners/hero_2.jpg) no-repeat center center scroll;
+    background: url(../assets/hero/hero_desktop_2.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
 .slide_3 {
-    background: url(../assets/banners/hero_3.jpg) no-repeat center center scroll;
+    background: url(../assets/hero/hero_desktop_3.jpg) no-repeat center center scroll;
     background-size: cover;
 }
 
@@ -719,7 +719,7 @@ main {
 }
 
 /*.skechers_bg {
-    background: url(../assets/projects/skechers/skechers_2019_2021_email-blast_bg.jpg) no-repeat center center scroll;
+    background: url(../assets/projects/skechers/email-blast/skechers_email-blast_bg.jpg) no-repeat center center scroll;
     background-size: cover;
 }*/
 
@@ -1098,17 +1098,17 @@ main {
     }
 
     .slide_1 {
-        background: url(../assets/banners/hero_mobile_1.jpg) no-repeat center center scroll;
+        background: url(../assets/hero/hero_mobile_1.jpg) no-repeat center center scroll;
         background-size: cover; 
     }
 
     .slide_2 {
-        background: url(../assets/banners/hero_mobile_2.jpg) no-repeat center center scroll;
+        background: url(../assets/hero/hero_mobile_2.jpg) no-repeat center center scroll;
         background-size: cover;
     }
 
     .slide_3 {
-        background: url(../assets/banners/hero_mobile_3.jpg) no-repeat center center scroll;
+        background: url(../assets/hero/hero_mobile_3.jpg) no-repeat center center scroll;
         background-size: cover;
     }
 
